@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.4",
-  "generatedAt": "2026-09-25T12:29:44.461Z",
-  "lastSuccessfulScanAt": "2026-09-25T12:29:44.461Z",
+  "generatedAt": "2026-09-25T12:31:33.608Z",
+  "lastSuccessfulScanAt": "2026-09-25T12:31:33.608Z",
   "status": "partial",
   "jobs": [
     {
@@ -65,8 +65,8 @@
       "description": "Moja Norwegia poszukuje Pipe Fittera do renomowanej stoczni w Norwegii. Oferujemy stabilne zatrudnienie z rotacją 4/2 oraz wynagrodzenie w wysokości od 280 do 300 NOK/h w zależności od doświadczenia. Wymagane doświadczenie przy montażu precyzyjnych rur hydraulicznych w systemie Ermeto oraz umiejętność czytania rysunków izometrycznych. Dodatkowym atutem jest znajomość języka angielskiego lub norweskiego.  #J-18808-Ljbffr",
       "publishedAt": "2026-06-06T07:53:57+00:00",
       "firstSeenAt": "2026-09-25T12:29:44.461Z",
-      "lastSeenAt": "2026-09-25T12:29:44.461Z",
-      "lastVerifiedAt": "2026-09-25T12:29:44.461Z",
+      "lastSeenAt": "2026-09-25T12:31:33.608Z",
+      "lastVerifiedAt": "2026-09-25T12:31:33.608Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -977,43 +977,43 @@
       "id": "nav",
       "kind": "official-api",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-25T12:29:44.463Z"
+      "lastCheckedAt": "2026-09-25T12:31:33.611Z"
     },
     {
       "id": "finn",
       "kind": "portal",
       "status": "success",
-      "lastCheckedAt": "2026-09-25T12:29:51.120Z"
+      "lastCheckedAt": "2026-09-25T12:31:38.346Z"
     },
     {
       "id": "adecco",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-25T12:29:48.014Z"
+      "lastCheckedAt": "2026-09-25T12:31:34.126Z"
     },
     {
       "id": "simona",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-25T12:29:45.273Z"
+      "lastCheckedAt": "2026-09-25T12:31:34.223Z"
     },
     {
       "id": "soprana",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-25T12:29:45.837Z"
+      "lastCheckedAt": "2026-09-25T12:31:34.603Z"
     },
     {
       "id": "mojaNorwegia",
       "kind": "portal",
       "status": "partial",
-      "lastCheckedAt": "2026-09-25T12:29:46.862Z"
+      "lastCheckedAt": "2026-09-25T12:31:39.049Z"
     },
     {
       "id": "vaia",
       "kind": "aggregator",
       "status": "success",
-      "lastCheckedAt": "2026-09-25T12:29:46.288Z"
+      "lastCheckedAt": "2026-09-25T12:31:35.229Z"
     },
     {
       "id": "seed-poloniusz-molde",
