@@ -1,6 +1,12 @@
 name: Scan job offers
 
 on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - data/jobs.json
+      - data/scan-state.json
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
