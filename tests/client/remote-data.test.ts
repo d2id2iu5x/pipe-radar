@@ -9,7 +9,10 @@ describe("remote job loading", () => {
   it("loads the portable static snapshot used by Cloudflare Pages", async () => {
     const fetcher = vi.fn(async () => new Response(JSON.stringify(payload)));
     await loadJobs({ fetcher, fallback: seedJobs, timeoutMs: 100 });
-    expect(fetcher).toHaveBeenCalledWith("/data/jobs.json", expect.objectContaining({ cache: "no-cache" }));
+    expect(fetcher).toHaveBeenCalledWith(
+      "https://raw.githubusercontent.com/d2id2iu5x/pipe-radar/main/data/jobs.json",
+      expect.objectContaining({ cache: "no-cache" })
+    );
   });
 
   it("uses validated remote jobs without writing localStorage", async () => {
