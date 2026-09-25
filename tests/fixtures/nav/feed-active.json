@@ -1,0 +1,7 @@
+{
+  "content": [
+    { "uuid": "uuid-1", "status": "ACTIVE", "title": "Industrial Pipefitter", "url": "https://pam-stilling-feed.nav.no/api/v1/ads/uuid-1" },
+    { "uuid": "uuid-2", "status": "ACTIVE", "title": "Office Manager", "url": "https://pam-stilling-feed.nav.no/api/v1/ads/uuid-2" }
+  ],
+  "next_url": "/api/v1/feed/next-page"
+}

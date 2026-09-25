@@ -1,0 +1,401 @@
+[
+  {
+    "title": "Monter rur — stal czarna",
+    "company": "Poloniusz / pracodawca norweski",
+    "location": "Molde / Kleive",
+    "country": "Norwegia",
+    "type": "Rotacja",
+    "rotation": "4/2",
+    "rate": "300 NOK/h + 200 NOK dieta/dzień",
+    "housing": "Opłacone",
+    "travel": "Darmowe loty, preferowany Gdańsk",
+    "skills": "Stal czarna, gięcie rur, rysunek techniczny, angielski, kat. B, norweska umowa",
+    "fit": 98,
+    "source": "Poloniusz",
+    "url": "https://www.poloniusz.pl/o1-2chci6/",
+    "verified": "15.09.2026",
+    "tags": [
+      "HOT",
+      "Norwegia",
+      "4/2",
+      "300 NOK",
+      "Dieta",
+      "Gdańsk"
+    ],
+    "id": "poloniusz-molde",
+    "meta": {
+      "url": "https://www.poloniusz.pl/o1-2chci6/",
+      "origin": "portal",
+      "housing": "provided",
+      "travel": "provided"
+    }
+  },
+  {
+    "title": "Industrial / Construction Pipefitter",
+    "company": "Simona Stadpipe",
+    "location": "Norwegia — projekty aquaculture",
+    "country": "Norwegia",
+    "type": "Rotacja",
+    "rotation": "Nie podano",
+    "rate": "Nie podano",
+    "housing": "Nie podano",
+    "travel": "Nie podano",
+    "skills": "Instalacja, utrzymanie i modyfikacja rurociągów; fagbrev; możliwość roli montasjeleder; angielski/norweski/skandynawski",
+    "fit": 90,
+    "source": "Simona Stadpipe",
+    "url": "https://www.simona-stadpipe.com/en/career/industrial-construction-pipefitter-rotational-work/",
+    "verified": "15.09.2026",
+    "tags": [
+      "NOWA",
+      "Norwegia",
+      "Rotacja",
+      "Przemysł",
+      "Montasjeleder"
+    ],
+    "id": "simona-pipefitter",
+    "meta": {
+      "url": "https://www.simona-stadpipe.com/en/career/industrial-construction-pipefitter-rotational-work/",
+      "origin": "employer",
+      "housing": "unknown",
+      "travel": "unknown",
+      "isNew": true
+    }
+  },
+  {
+    "title": "Industrial Pipe Fitter / TIG Welder",
+    "company": "Adecco",
+    "location": "Averøya / Kristiansund",
+    "country": "Norwegia",
+    "type": "Rotacja",
+    "rotation": "6/2",
+    "rate": "Według doświadczenia",
+    "housing": "2400 NOK / 14 dni",
+    "travel": "Pierwszy wyjazd do 3500 NOK pokrywa Adecco",
+    "skills": "Industrial pipe fitting, TIG 141, dokumentacja techniczna, 48 h/tydz., start wrzesień 2026",
+    "fit": 86,
+    "source": "Adecco Norway",
+    "url": "https://www.adecco.com/nb-no/ledige-stillinger/industrial-pipe-fitter-tig-welder-kristiansund/tk-en-e5655d9a-336f-4315-84a6-537008e3cc40",
+    "verified": "15.09.2026",
+    "tags": [
+      "NOWA",
+      "Norwegia",
+      "6/2",
+      "TIG 141",
+      "Kristiansund"
+    ],
+    "id": "adecco-kristiansund",
+    "meta": {
+      "url": "https://www.adecco.com/nb-no/ledige-stillinger/industrial-pipe-fitter-tig-welder-kristiansund/tk-en-e5655d9a-336f-4315-84a6-537008e3cc40",
+      "origin": "employer",
+      "housing": "no",
+      "travel": "partial",
+      "archived": true,
+      "reason": "W poprzednim audycie: HTTP 410. Sprawdź źródło przed ponownym użyciem."
+    }
+  },
+  {
+    "title": "Pipefitters — Norwegian Shipyards",
+    "company": "Soprana Personell Norge",
+    "location": "Stavanger / Bergen / Ålesund / Trondheim +",
+    "country": "Norwegia",
+    "type": "Rotacja",
+    "rotation": "4/2",
+    "rate": "300 NOK/h brutto",
+    "housing": "Tak — w okresie ON",
+    "travel": "Tak — każda rotacja",
+    "skills": "Prefabrikacja i montaż rurociągów, hydraulika, Ermeto/Parker, ISO; 48–54 h/tydz.",
+    "fit": 99,
+    "source": "Soprana — źródło pracodawcy",
+    "url": "https://stillinger.soprana.no/l/fi/o/rrleggere-norske-verft-4-uker-pa-2-uker-av-300-nokt-brutto-4?lang=pl",
+    "verified": "15.09.2026",
+    "tags": [
+      "Norwegia",
+      "4/2",
+      "300 NOK",
+      "Stocznia",
+      "Ermeto",
+      "ZWERYFIKOWANA"
+    ],
+    "id": "soprana-shipyards",
+    "meta": {
+      "url": "https://stillinger.soprana.no/l/fi/o/rrleggere-norske-verft-4-uker-pa-2-uker-av-300-nokt-brutto-4?lang=pl",
+      "origin": "employer",
+      "housing": "provided",
+      "travel": "provided",
+      "isNew": true
+    }
+  },
+  {
+    "title": "Industrial Pipefitter",
+    "company": "NH Bemanning AS",
+    "location": "Leirvik, Sogn",
+    "country": "Norwegia",
+    "type": "Rotacja",
+    "rotation": "6/2 lub 3/1",
+    "rate": "290 NOK/h",
+    "housing": "Darmowe — na miejscu",
+    "travel": "Oslo ↔ projekt",
+    "skills": "Duże rurociągi, hydraulika, montaż, produkcja i próby; rysunki/dokumentacja; 50 h/tydz.",
+    "fit": 95,
+    "source": "NAV / arbeidsplassen.no — źródło pierwotne",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/d61660a2-ef08-4058-a2b9-199b3f47b19d",
+    "verified": "15.09.2026",
+    "tags": [
+      "Norwegia",
+      "Rotacja",
+      "Stocznia",
+      "Duże rurociągi",
+      "Izometria"
+    ],
+    "id": "nh-leirvik",
+    "meta": {
+      "url": "https://arbeidsplassen.nav.no/stillinger/stilling/d61660a2-ef08-4058-a2b9-199b3f47b19d",
+      "origin": "nav",
+      "housing": "provided",
+      "travel": "partial"
+    }
+  },
+  {
+    "title": "Monter rurociągów przemysłowych / Pipefitter",
+    "company": "Ogłoszenie rekrutacyjne",
+    "location": "Nord-Trøndelag + projekty północnej Norwegii",
+    "country": "Norwegia",
+    "type": "Rotacja",
+    "rotation": "3/1 lub 6/2",
+    "rate": "301 NOK/h + możliwe 20% utenbys",
+    "housing": "Darmowe",
+    "travel": "Pierwsza podróż do 2500 NOK",
+    "skills": "Instalacje przemysłowe/oczyszczanie, min. 5 lat doświadczenia, test site, angielski, praca zespołowa",
+    "fit": 97,
+    "source": "JOBS.pl",
+    "url": "https://www.jobs.pl/monter-rurociagow-przemyslowych-pipefitter-norwegia-oferta-3925314",
+    "verified": "15.09.2026",
+    "tags": [
+      "Norwegia",
+      "Rotacja",
+      "301 NOK",
+      "Przemysł",
+      "5+ lat"
+    ],
+    "id": "jobs-norint",
+    "meta": {
+      "url": "https://www.jobs.pl/monter-rurociagow-przemyslowych-pipefitter-norwegia-oferta-3925314",
+      "origin": "portal",
+      "housing": "provided",
+      "travel": "partial",
+      "archived": true,
+      "reason": "W poprzednim audycie: źródło oznaczyło ofertę jako wygasłą."
+    }
+  },
+  {
+    "title": "Monter rurociągów / Pipe Fitter — VARD Brattvaag",
+    "company": "Moja Norwegia / projekt stoczniowy",
+    "location": "Brattvaag, Møre og Romsdal",
+    "country": "Norwegia",
+    "type": "Rotacja",
+    "rotation": "4/2",
+    "rate": "~300 NOK/h",
+    "housing": "Darmowe",
+    "travel": "Opłacone przeloty",
+    "skills": "Izometria, trasowanie, cięcie, szlifowanie, prefabrykacja, podpory, kołnierze, armatura, próby ciśnieniowe",
+    "fit": 99,
+    "source": "Vaia / Moja Norwegia",
+    "url": "https://talents.vaia.com/companies/moja-norwegia/monter-rurociagow-pipe-fitter-norwegia-vard-brattvaag-134755460/",
+    "verified": "15.09.2026",
+    "tags": [
+      "Norwegia",
+      "Rotacja 4/2",
+      "VARD",
+      "Stocznia",
+      "Izometria",
+      "Kołnierze"
+    ],
+    "id": "vard-brattvaag",
+    "meta": {
+      "url": "https://talents.vaia.com/companies/moja-norwegia/monter-rurociagow-pipe-fitter-norwegia-vard-brattvaag-134755460/",
+      "origin": "aggregator",
+      "housing": "provided",
+      "travel": "provided",
+      "isNew": true
+    }
+  },
+  {
+    "title": "Pipe Fitter — stocznia",
+    "company": "Moja Norwegia",
+    "location": "Norwegia",
+    "country": "Norwegia",
+    "type": "Rotacja",
+    "rotation": "4/2",
+    "rate": "280–300 NOK/h",
+    "housing": "Darmowe + wyżywienie",
+    "travel": "Bezpłatne przeloty",
+    "skills": "Precyzyjne rury hydrauliczne, gięcie trzpieniowe, Ermeto, izometria",
+    "fit": 93,
+    "source": "MojaNorwegia.pl",
+    "url": "https://www.mojanorwegia.pl/ogloszenia_o_prace/pipe_fitter_norwegia-s105908.html",
+    "verified": "15.09.2026",
+    "tags": [
+      "Norwegia",
+      "Rotacja 4/2",
+      "Hydraulika",
+      "Ermeto",
+      "Stocznia"
+    ],
+    "id": "mojanorwegia-pipefitter",
+    "meta": {
+      "url": "https://www.mojanorwegia.pl/ogloszenia_o_prace/pipe_fitter_norwegia-s105908.html",
+      "origin": "portal",
+      "housing": "provided",
+      "travel": "provided"
+    }
+  },
+  {
+    "title": "Monter rurociągów — start wrzesień 2026",
+    "company": "Stanship",
+    "location": "Norwegia",
+    "country": "Norwegia",
+    "type": "Rotacja",
+    "rotation": "3/1 lub 2 tyg. pracy / uzgodniony wolny",
+    "rate": "min. 300 NOK/h",
+    "housing": "Na koszt pracodawcy",
+    "travel": "Na koszt pracodawcy",
+    "skills": "Projekty stoczniowe/przemysłowe, ISO, stal, hydraulika, samodzielność i praca zespołowa",
+    "fit": 98,
+    "source": "Indeed — agregator; sprawdź źródło pracodawcy",
+    "url": "https://pl.indeed.com/viewjob?jk=c15ed66dface1e9c",
+    "verified": "15.09.2026",
+    "tags": [
+      "Norwegia",
+      "300+ NOK",
+      "ISO",
+      "Stocznia",
+      "Przemysł"
+    ],
+    "id": "stanship-indeed",
+    "meta": {
+      "url": "https://pl.indeed.com/viewjob?jk=c15ed66dface1e9c",
+      "origin": "aggregator",
+      "housing": "provided",
+      "travel": "provided"
+    }
+  },
+  {
+    "title": "Industrirørleggere søkast",
+    "company": "Fjordpipe AS",
+    "location": "Møre og Romsdal / Vestland",
+    "country": "Norwegia",
+    "type": "Etat",
+    "rotation": "Nie podano",
+    "rate": "Konkurencyjne wynagrodzenie",
+    "housing": "Nie podano",
+    "travel": "Nie podano",
+    "skills": "Instalacje morskie i lądowe, prefabrykacja, izometria, Ermeto, stal, nierdzewka, PE, HMS",
+    "fit": 91,
+    "source": "NAV / arbeidsplassen.no — źródło pierwotne",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/c83de50f-8800-4849-ade5-b387c7954951",
+    "verified": "15.09.2026",
+    "tags": [
+      "Norwegia",
+      "Maritime",
+      "Prefabrykacja",
+      "Izometria",
+      "Ermeto"
+    ],
+    "id": "fjordpipe-nav",
+    "meta": {
+      "url": "https://arbeidsplassen.nav.no/stillinger/stilling/c83de50f-8800-4849-ade5-b387c7954951",
+      "origin": "nav",
+      "housing": "unknown",
+      "travel": "unknown"
+    }
+  },
+  {
+    "title": "Pipefitter / Welder",
+    "company": "Ulmo AS",
+    "location": "Ålesund / projekty w Norwegii",
+    "country": "Norwegia",
+    "type": "Etat",
+    "rotation": "Nie podano",
+    "rate": "Zależna od doświadczenia",
+    "housing": "Nie podano",
+    "travel": "Okazjonalne wyjazdy",
+    "skills": "Prefabrykacja i montaż rurociągów, konstrukcje stalowe, rysunki techniczne, jakość, BHP, TIG/MIG/MAG",
+    "fit": 88,
+    "source": "NAV / arbeidsplassen.no — źródło pierwotne",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/77445a66-0cde-40eb-a122-552eacac52bd",
+    "verified": "15.09.2026",
+    "tags": [
+      "Norwegia",
+      "Przemysł",
+      "BHP",
+      "Prefabrykacja",
+      "Spawanie"
+    ],
+    "id": "ulmo-nav",
+    "meta": {
+      "url": "https://arbeidsplassen.nav.no/stillinger/stilling/77445a66-0cde-40eb-a122-552eacac52bd",
+      "origin": "nav",
+      "housing": "unknown",
+      "travel": "unknown"
+    }
+  },
+  {
+    "title": "On-/offshoremedarbeider — Hose Management",
+    "company": "TESS",
+    "location": "Ålesund / Florø / Trondheim / Harstad / Bodø",
+    "country": "Norwegia",
+    "type": "Etat",
+    "rotation": "Nie podano",
+    "rate": "Konkurencyjne warunki",
+    "housing": "Nie podano",
+    "travel": "Nie podano",
+    "skills": "Pomiary, inspekcje, weryfikacja i wymiana przewodów; wymagany fach pokrewny i doświadczenie hydrauliczne/mechaniczne",
+    "fit": 76,
+    "source": "FINN.no",
+    "url": "https://www.finn.no/job/ad/473893035",
+    "verified": "15.09.2026",
+    "tags": [
+      "Norwegia",
+      "Offshore",
+      "Hydraulika",
+      "TESS"
+    ],
+    "id": "tess-finn",
+    "meta": {
+      "url": "https://www.finn.no/job/ad/473893035",
+      "origin": "portal",
+      "housing": "unknown",
+      "travel": "unknown"
+    }
+  },
+  {
+    "title": "Monter rurociągów okrętowych",
+    "company": "REM-POL Resources AS",
+    "location": "Bergen / Stavanger",
+    "country": "Norwegia",
+    "type": "Rotacja",
+    "rotation": "2/3",
+    "rate": "Według doświadczenia",
+    "housing": "Darmowe + wyżywienie",
+    "travel": "Przeloty + transfer",
+    "skills": "Min. 3 lata stoczni, rysunki i symbole spawalnicze, norweska umowa, Fellesforbundet, BHP/jakość",
+    "fit": 95,
+    "source": "MojaNorwegia.pl",
+    "url": "https://www.mojanorwegia.pl/ogloszenia_o_prace/monter_rurociagow_okretowych_-_stala_rotacja_2_3-s104275.html",
+    "verified": "15.09.2026",
+    "tags": [
+      "Norwegia",
+      "Rotacja 2/3",
+      "Stocznia",
+      "Umowa norweska"
+    ],
+    "id": "rempol-rotation",
+    "meta": {
+      "url": "https://www.mojanorwegia.pl/ogloszenia_o_prace/monter_rurociagow_okretowych_-_stala_rotacja_2_3-s104275.html",
+      "origin": "portal",
+      "housing": "provided",
+      "travel": "provided",
+      "checkDate": true
+    }
+  }
+]

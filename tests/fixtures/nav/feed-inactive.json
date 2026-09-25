@@ -1,0 +1,6 @@
+{
+  "content": [
+    { "uuid": "uuid-1", "status": "INACTIVE", "title": "Old Pipefitter", "businessName": "Old employer", "url": "https://pam-stilling-feed.nav.no/api/v1/ads/uuid-1" }
+  ],
+  "next_url": null
+}

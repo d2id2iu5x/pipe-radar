@@ -1,0 +1,9 @@
+.worktrees/
+.superpowers/
+node_modules/
+.netlify/
+coverage/
+dist/
+.env
+.env.*
+!.env.example

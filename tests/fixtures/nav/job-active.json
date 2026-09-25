@@ -1,0 +1,8 @@
+{
+  "uuid": "uuid-1",
+  "title": "Industrial Pipefitter",
+  "businessName": "Example Yard AS",
+  "description": "Shipyard piping and prefabrication",
+  "published": "2026-09-24T08:00:00.000Z",
+  "location": { "city": "Bergen", "country": "Norway" }
+}

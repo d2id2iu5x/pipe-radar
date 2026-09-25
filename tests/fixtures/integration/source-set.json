@@ -1,0 +1,20 @@
+{
+  "employer": {
+    "sourceId": "employer", "sourceJobId": "shared-pipe-job", "sourceKind": "employer",
+    "url": "https://employer.test/jobs/shared-pipe-job", "title": "Industrial Pipefitter",
+    "company": "Primary Yard AS", "country": "Norway", "location": "Bergen",
+    "description": "Shipyard piping and prefabrication", "rate": "300 NOK/h"
+  },
+  "portalCopy": {
+    "sourceId": "portal", "sourceJobId": "shared-pipe-job", "sourceKind": "portal",
+    "url": "https://portal.test/jobs/shared-pipe-job", "title": "Industrial Pipefitter",
+    "company": "Recruitment Copy", "country": "Norway", "location": "Bergen",
+    "description": "Shipyard piping and prefabrication", "rate": "280 NOK/h"
+  },
+  "nav": {
+    "sourceId": "nav", "sourceJobId": "uuid-expired", "sourceKind": "official-api",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/uuid-expired", "title": "Industrial Pipefitter",
+    "company": "NAV Employer", "country": "Norway", "location": "Stavanger",
+    "description": "Industrial piping"
+  }
+}
