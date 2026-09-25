@@ -1,9 +1,83 @@
 {
   "schemaVersion": "2.4",
-  "generatedAt": "2026-09-15T00:00:00.000Z",
-  "lastSuccessfulScanAt": "2026-09-15T00:00:00.000Z",
-  "status": "fallback",
+  "generatedAt": "2026-09-25T12:29:44.461Z",
+  "lastSuccessfulScanAt": "2026-09-25T12:29:44.461Z",
+  "status": "partial",
   "jobs": [
+    {
+      "id": "vaia:Moja Norwegia",
+      "sourceId": "vaia",
+      "sourceJobId": "Moja Norwegia",
+      "sourceKind": "aggregator",
+      "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-offshore-shipyard-norway-flights-housing-116661769/",
+      "sources": [
+        {
+          "sourceId": "vaia",
+          "sourceJobId": "Moja Norwegia",
+          "kind": "aggregator",
+          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-offshore-shipyard-norway-flights-housing-116661769/"
+        },
+        {
+          "sourceId": "vaia",
+          "sourceJobId": "Moja Norwegia",
+          "kind": "aggregator",
+          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-norwegia-116660164/"
+        },
+        {
+          "sourceId": "vaia",
+          "sourceJobId": "Moja Norwegia",
+          "kind": "aggregator",
+          "url": "https://talents.vaia.com/companies/moja-norwegia/pipe-fitter-norwegia-130956924/"
+        },
+        {
+          "sourceId": "vaia",
+          "sourceJobId": "Moja Norwegia",
+          "kind": "aggregator",
+          "url": "https://talents.vaia.com/companies/moja-norwegia/pipe-fitter-offshore-shipyard-norway-flights-housing-131038322/"
+        }
+      ],
+      "title": "Pipe Fitter — Offshore Shipyard, Norway | Flights & Housing",
+      "company": "Moja Norwegia",
+      "country": "US",
+      "location": "Wind Lake",
+      "employmentType": "Nie podano",
+      "rotation": {
+        "raw": "Nie podano",
+        "normalized": null
+      },
+      "rate": {
+        "raw": "Nie podano",
+        "currency": null,
+        "hourlyMin": null,
+        "hourlyMax": null,
+        "approximate": false
+      },
+      "housing": {
+        "raw": "Nie podano",
+        "normalized": null
+      },
+      "travel": {
+        "raw": "Nie podano",
+        "normalized": null
+      },
+      "skills": [],
+      "tags": [],
+      "description": "Moja Norwegia poszukuje Pipe Fittera do renomowanej stoczni w Norwegii. Oferujemy stabilne zatrudnienie z rotacją 4/2 oraz wynagrodzenie w wysokości od 280 do 300 NOK/h w zależności od doświadczenia. Wymagane doświadczenie przy montażu precyzyjnych rur hydraulicznych w systemie Ermeto oraz umiejętność czytania rysunków izometrycznych. Dodatkowym atutem jest znajomość języka angielskiego lub norweskiego.  #J-18808-Ljbffr",
+      "publishedAt": "2026-06-06T07:53:57+00:00",
+      "firstSeenAt": "2026-09-25T12:29:44.461Z",
+      "lastSeenAt": "2026-09-25T12:29:44.461Z",
+      "lastVerifiedAt": "2026-09-25T12:29:44.461Z",
+      "missingSuccessfulScans": 0,
+      "status": "new",
+      "conflicts": [],
+      "fit": {
+        "base": 0,
+        "adjustments": [],
+        "raw": 0,
+        "score": 0
+      },
+      "legacyFit": 0
+    },
     {
       "id": "poloniusz-molde",
       "sourceId": "seed-poloniusz-molde",
@@ -900,81 +974,123 @@
   ],
   "sources": [
     {
-      "id": "seed-poloniusz-molde",
+      "id": "nav",
+      "kind": "official-api",
+      "status": "blocked",
+      "lastCheckedAt": "2026-09-25T12:29:44.463Z"
+    },
+    {
+      "id": "finn",
       "kind": "portal",
       "status": "success",
+      "lastCheckedAt": "2026-09-25T12:29:51.120Z"
+    },
+    {
+      "id": "adecco",
+      "kind": "employer",
+      "status": "blocked",
+      "lastCheckedAt": "2026-09-25T12:29:48.014Z"
+    },
+    {
+      "id": "simona",
+      "kind": "employer",
+      "status": "blocked",
+      "lastCheckedAt": "2026-09-25T12:29:45.273Z"
+    },
+    {
+      "id": "soprana",
+      "kind": "employer",
+      "status": "blocked",
+      "lastCheckedAt": "2026-09-25T12:29:45.837Z"
+    },
+    {
+      "id": "mojaNorwegia",
+      "kind": "portal",
+      "status": "partial",
+      "lastCheckedAt": "2026-09-25T12:29:46.862Z"
+    },
+    {
+      "id": "vaia",
+      "kind": "aggregator",
+      "status": "success",
+      "lastCheckedAt": "2026-09-25T12:29:46.288Z"
+    },
+    {
+      "id": "seed-poloniusz-molde",
+      "kind": "portal",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     },
     {
       "id": "seed-simona-pipefitter",
       "kind": "employer",
-      "status": "success",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     },
     {
       "id": "seed-adecco-kristiansund",
       "kind": "employer",
-      "status": "success",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     },
     {
       "id": "seed-soprana-shipyards",
       "kind": "employer",
-      "status": "success",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     },
     {
       "id": "seed-nh-leirvik",
       "kind": "official-api",
-      "status": "success",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     },
     {
       "id": "seed-jobs-norint",
       "kind": "portal",
-      "status": "success",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     },
     {
       "id": "seed-vard-brattvaag",
       "kind": "aggregator",
-      "status": "success",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     },
     {
       "id": "seed-mojanorwegia-pipefitter",
       "kind": "portal",
-      "status": "success",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     },
     {
       "id": "seed-stanship-indeed",
       "kind": "aggregator",
-      "status": "success",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     },
     {
       "id": "seed-fjordpipe-nav",
       "kind": "official-api",
-      "status": "success",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     },
     {
       "id": "seed-ulmo-nav",
       "kind": "official-api",
-      "status": "success",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     },
     {
       "id": "seed-tess-finn",
       "kind": "portal",
-      "status": "success",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     },
     {
       "id": "seed-rempol-rotation",
       "kind": "portal",
-      "status": "success",
+      "status": "failed",
       "lastCheckedAt": "2026-09-15T00:00:00.000Z"
     }
   ]
