@@ -1,6 +1,6 @@
 # PIPE RADAR v2.4
 
-PIPE RADAR publikuje ostatni zwalidowany snapshot ofert jako statyczny plik `data/jobs.json`. GitHub Actions uruchamia skan co sześć godzin, a Cloudflare Pages publikuje stronę. Statyczna strona zachowuje 13 rekordów v2.3.1 jako awaryjną bazę lokalną.
+PIPE RADAR publikuje ostatni zwalidowany snapshot ofert jako statyczny plik `data/jobs.json`. GitHub Actions uruchamia skan co sześć godzin, a frontend na Cloudflare Pages pobiera aktualny snapshot bezpośrednio z publicznego repozytorium. Statyczna strona zachowuje 13 rekordów v2.3.1 jako awaryjną bazę lokalną.
 
 ## Uruchomienie lokalne
 
