@@ -1,3 +1,5 @@
+const JOBS_URL = "https://raw.githubusercontent.com/d2id2iu5x/pipe-radar/main/data/jobs.json";
+
 function validHttpUrl(value) {
   try { return ["http:", "https:"].includes(new URL(value).protocol); } catch { return false; }
 }
@@ -23,7 +25,7 @@ export async function loadJobs({ fetcher = fetch, fallback, timeoutMs = 8000 }) 
       timer = setTimeout(() => { controller.abort(); reject(new Error("Job API timeout")); }, timeoutMs);
     });
     const response = await Promise.race([
-      fetcher("/data/jobs.json", { cache: "no-cache", signal: controller.signal }),
+      fetcher(JOBS_URL, { cache: "no-cache", signal: controller.signal }),
       timeout
     ]);
     if (!(response instanceof Response) || !response.ok) throw new Error("Job API unavailable");
