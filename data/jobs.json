@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.4",
-  "generatedAt": "2026-09-27T00:33:47.972Z",
-  "lastSuccessfulScanAt": "2026-09-27T00:33:47.972Z",
+  "generatedAt": "2026-09-27T06:31:20.465Z",
+  "lastSuccessfulScanAt": "2026-09-27T06:31:20.465Z",
   "status": "partial",
   "jobs": [
     {
@@ -65,8 +65,8 @@
       "description": "# Pipe fitter Norwegia**Vestland**  |  16-03-2026 12:19   |  Numer ogłoszenia: 105908* Pipe fitter* Przemysł stoczniowy**Pipe Fitter – Praca w Norwegii (stocznia)**Szukasz stabilnej pracy za granicą z dobrymi warunkami i pewnym zatrudnieniem?   Dołącz do naszego zespołu jako **Pipe Fitter** i pracuj na renomowanej stoczni w Norwegii!    Szukamy osób z doświadczeniem przy montażu **precyzyjnych rur hydraulicznych**. Rury gięte **giętarką trzpieniową**, połączenia **Ermeto**. Oferujemy:  280–300 NOK/h (w zależności od doświadczenia)  * Rotacja **4/2*** **Bezpłatne przeloty*** **Zakwaterowanie i pełne wyżywienie*** Stabilne zatrudnienie na **norweskich warunkach*** Pomoc koordynatora na miejscu* Wsparcie w organizacji wyjazdu  Wymagania:* Doświadczenie przy montażu i gięciu precyzyjnych rur hydraulicznych w systemie Ermeto* Umiejętność czytania **rysunków izometrycznych*** Znajomość języka angielskiego lub norweskiego będzie dodatkowym atutem Start pracy: jak najszybciejZainteresowany? Prześlij swoje CV lub skontaktuj się z nami – chętnie udzielimy szczegółowych informacji! #J-18808-Ljbffr",
       "publishedAt": "2026-07-03T08:30:35+00:00",
       "firstSeenAt": "2026-09-25T12:29:44.461Z",
-      "lastSeenAt": "2026-09-27T00:33:47.972Z",
-      "lastVerifiedAt": "2026-09-27T00:33:47.972Z",
+      "lastSeenAt": "2026-09-27T06:31:20.465Z",
+      "lastVerifiedAt": "2026-09-27T06:31:20.465Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -977,43 +977,43 @@
       "id": "nav",
       "kind": "official-api",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-27T00:33:47.975Z"
+      "lastCheckedAt": "2026-09-27T06:31:20.469Z"
     },
     {
       "id": "finn",
       "kind": "portal",
       "status": "success",
-      "lastCheckedAt": "2026-09-27T00:33:53.397Z"
+      "lastCheckedAt": "2026-09-27T06:31:24.640Z"
     },
     {
       "id": "adecco",
       "kind": "employer",
-      "status": "failed",
-      "lastCheckedAt": "2026-09-27T00:34:07.992Z"
+      "status": "blocked",
+      "lastCheckedAt": "2026-09-27T06:31:20.648Z"
     },
     {
       "id": "simona",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-27T00:33:48.946Z"
+      "lastCheckedAt": "2026-09-27T06:31:21.097Z"
     },
     {
       "id": "soprana",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-27T00:33:49.236Z"
+      "lastCheckedAt": "2026-09-27T06:31:21.525Z"
     },
     {
       "id": "mojaNorwegia",
       "kind": "portal",
       "status": "partial",
-      "lastCheckedAt": "2026-09-27T00:33:53.202Z"
+      "lastCheckedAt": "2026-09-27T06:31:26.031Z"
     },
     {
       "id": "vaia",
       "kind": "aggregator",
       "status": "success",
-      "lastCheckedAt": "2026-09-27T00:33:49.909Z"
+      "lastCheckedAt": "2026-09-27T06:31:21.981Z"
     },
     {
       "id": "seed-poloniusz-molde",
