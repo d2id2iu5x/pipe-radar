@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.4",
-  "generatedAt": "2026-09-28T00:35:10.812Z",
-  "lastSuccessfulScanAt": "2026-09-28T00:35:10.812Z",
+  "generatedAt": "2026-09-28T06:35:01.400Z",
+  "lastSuccessfulScanAt": "2026-09-28T06:35:01.400Z",
   "status": "partial",
   "jobs": [
     {
@@ -27,13 +27,13 @@
           "sourceId": "vaia",
           "sourceJobId": "Moja Norwegia",
           "kind": "aggregator",
-          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-offshore-shipyard-norway-flights-housing-116661769/"
+          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-norwegia-116660164/"
         },
         {
           "sourceId": "vaia",
           "sourceJobId": "Moja Norwegia",
           "kind": "aggregator",
-          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-norwegia-116660164/"
+          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-offshore-shipyard-norway-flights-housing-116661769/"
         }
       ],
       "title": "Pipe fitter Norwegia",
@@ -65,8 +65,8 @@
       "description": "# Pipe fitter Norwegia**Vestland**  |  16-03-2026 12:19   |  Numer ogłoszenia: 105908* Pipe fitter* Przemysł stoczniowy**Pipe Fitter – Praca w Norwegii (stocznia)**Szukasz stabilnej pracy za granicą z dobrymi warunkami i pewnym zatrudnieniem?   Dołącz do naszego zespołu jako **Pipe Fitter** i pracuj na renomowanej stoczni w Norwegii!    Szukamy osób z doświadczeniem przy montażu **precyzyjnych rur hydraulicznych**. Rury gięte **giętarką trzpieniową**, połączenia **Ermeto**. Oferujemy:  280–300 NOK/h (w zależności od doświadczenia)  * Rotacja **4/2*** **Bezpłatne przeloty*** **Zakwaterowanie i pełne wyżywienie*** Stabilne zatrudnienie na **norweskich warunkach*** Pomoc koordynatora na miejscu* Wsparcie w organizacji wyjazdu  Wymagania:* Doświadczenie przy montażu i gięciu precyzyjnych rur hydraulicznych w systemie Ermeto* Umiejętność czytania **rysunków izometrycznych*** Znajomość języka angielskiego lub norweskiego będzie dodatkowym atutem Start pracy: jak najszybciejZainteresowany? Prześlij swoje CV lub skontaktuj się z nami – chętnie udzielimy szczegółowych informacji! #J-18808-Ljbffr",
       "publishedAt": "2026-07-03T08:30:35+00:00",
       "firstSeenAt": "2026-09-25T12:29:44.461Z",
-      "lastSeenAt": "2026-09-28T00:35:10.812Z",
-      "lastVerifiedAt": "2026-09-28T00:35:10.812Z",
+      "lastSeenAt": "2026-09-28T06:35:01.400Z",
+      "lastVerifiedAt": "2026-09-28T06:35:01.400Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -977,43 +977,43 @@
       "id": "nav",
       "kind": "official-api",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-28T00:35:10.814Z"
+      "lastCheckedAt": "2026-09-28T06:35:01.403Z"
     },
     {
       "id": "finn",
       "kind": "portal",
-      "status": "blocked",
-      "lastCheckedAt": "2026-09-28T00:35:11.923Z"
+      "status": "success",
+      "lastCheckedAt": "2026-09-28T06:35:04.955Z"
     },
     {
       "id": "adecco",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-28T00:35:13.603Z"
+      "lastCheckedAt": "2026-09-28T06:35:02.393Z"
     },
     {
       "id": "simona",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-28T00:35:11.588Z"
+      "lastCheckedAt": "2026-09-28T06:35:02.011Z"
     },
     {
       "id": "soprana",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-28T00:35:11.865Z"
+      "lastCheckedAt": "2026-09-28T06:35:02.379Z"
     },
     {
       "id": "mojaNorwegia",
       "kind": "portal",
       "status": "partial",
-      "lastCheckedAt": "2026-09-28T00:35:15.988Z"
+      "lastCheckedAt": "2026-09-28T06:35:06.685Z"
     },
     {
       "id": "vaia",
       "kind": "aggregator",
       "status": "success",
-      "lastCheckedAt": "2026-09-28T00:35:12.484Z"
+      "lastCheckedAt": "2026-09-28T06:35:03.037Z"
     },
     {
       "id": "seed-poloniusz-molde",
