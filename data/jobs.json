@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.4",
-  "generatedAt": "2026-09-28T12:34:05.333Z",
-  "lastSuccessfulScanAt": "2026-09-28T12:34:05.333Z",
+  "generatedAt": "2026-09-28T18:31:13.327Z",
+  "lastSuccessfulScanAt": "2026-09-28T18:31:13.327Z",
   "status": "partial",
   "jobs": [
     {
@@ -9,20 +9,8 @@
       "sourceId": "vaia",
       "sourceJobId": "Moja Norwegia",
       "sourceKind": "aggregator",
-      "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-norwegia-116660164/",
+      "url": "https://talents.vaia.com/companies/moja-norwegia/pipe-fitter-norwegia-130956924/",
       "sources": [
-        {
-          "sourceId": "vaia",
-          "sourceJobId": "Moja Norwegia",
-          "kind": "aggregator",
-          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-norwegia-116660164/"
-        },
-        {
-          "sourceId": "vaia",
-          "sourceJobId": "Moja Norwegia",
-          "kind": "aggregator",
-          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-offshore-shipyard-norway-flights-housing-116661769/"
-        },
         {
           "sourceId": "vaia",
           "sourceJobId": "Moja Norwegia",
@@ -34,12 +22,24 @@
           "sourceJobId": "Moja Norwegia",
           "kind": "aggregator",
           "url": "https://talents.vaia.com/companies/moja-norwegia/pipe-fitter-offshore-shipyard-norway-flights-housing-131038322/"
+        },
+        {
+          "sourceId": "vaia",
+          "sourceJobId": "Moja Norwegia",
+          "kind": "aggregator",
+          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-norwegia-116660164/"
+        },
+        {
+          "sourceId": "vaia",
+          "sourceJobId": "Moja Norwegia",
+          "kind": "aggregator",
+          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-offshore-shipyard-norway-flights-housing-116661769/"
         }
       ],
       "title": "Pipe fitter Norwegia",
       "company": "Moja Norwegia",
       "country": "US",
-      "location": "Wind Lake",
+      "location": "Nie podano",
       "employmentType": "Nie podano",
       "rotation": {
         "raw": "Nie podano",
@@ -63,10 +63,10 @@
       "skills": [],
       "tags": [],
       "description": "# Pipe fitter Norwegia**Vestland**  |  16-03-2026 12:19   |  Numer ogłoszenia: 105908* Pipe fitter* Przemysł stoczniowy**Pipe Fitter – Praca w Norwegii (stocznia)**Szukasz stabilnej pracy za granicą z dobrymi warunkami i pewnym zatrudnieniem?   Dołącz do naszego zespołu jako **Pipe Fitter** i pracuj na renomowanej stoczni w Norwegii!    Szukamy osób z doświadczeniem przy montażu **precyzyjnych rur hydraulicznych**. Rury gięte **giętarką trzpieniową**, połączenia **Ermeto**. Oferujemy:  280–300 NOK/h (w zależności od doświadczenia)  * Rotacja **4/2*** **Bezpłatne przeloty*** **Zakwaterowanie i pełne wyżywienie*** Stabilne zatrudnienie na **norweskich warunkach*** Pomoc koordynatora na miejscu* Wsparcie w organizacji wyjazdu  Wymagania:* Doświadczenie przy montażu i gięciu precyzyjnych rur hydraulicznych w systemie Ermeto* Umiejętność czytania **rysunków izometrycznych*** Znajomość języka angielskiego lub norweskiego będzie dodatkowym atutem Start pracy: jak najszybciejZainteresowany? Prześlij swoje CV lub skontaktuj się z nami – chętnie udzielimy szczegółowych informacji! #J-18808-Ljbffr",
-      "publishedAt": "2026-06-06T07:52:23+00:00",
+      "publishedAt": "2026-07-03T08:30:35+00:00",
       "firstSeenAt": "2026-09-25T12:29:44.461Z",
-      "lastSeenAt": "2026-09-28T12:34:05.333Z",
-      "lastVerifiedAt": "2026-09-28T12:34:05.333Z",
+      "lastSeenAt": "2026-09-28T18:31:13.327Z",
+      "lastVerifiedAt": "2026-09-28T18:31:13.327Z",
       "missingSuccessfulScans": 0,
       "status": "active",
       "conflicts": [],
@@ -977,43 +977,43 @@
       "id": "nav",
       "kind": "official-api",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-28T12:34:05.335Z"
+      "lastCheckedAt": "2026-09-28T18:31:13.330Z"
     },
     {
       "id": "finn",
       "kind": "portal",
       "status": "success",
-      "lastCheckedAt": "2026-09-28T12:34:11.434Z"
+      "lastCheckedAt": "2026-09-28T18:31:19.334Z"
     },
     {
       "id": "adecco",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-28T12:34:08.313Z"
+      "lastCheckedAt": "2026-09-28T18:31:13.944Z"
     },
     {
       "id": "simona",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-28T12:34:06.100Z"
+      "lastCheckedAt": "2026-09-28T18:31:14.156Z"
     },
     {
       "id": "soprana",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-09-28T12:34:06.398Z"
+      "lastCheckedAt": "2026-09-28T18:31:14.543Z"
     },
     {
       "id": "mojaNorwegia",
       "kind": "portal",
       "status": "partial",
-      "lastCheckedAt": "2026-09-28T12:34:07.547Z"
+      "lastCheckedAt": "2026-09-28T18:31:18.430Z"
     },
     {
       "id": "vaia",
       "kind": "aggregator",
       "status": "success",
-      "lastCheckedAt": "2026-09-28T12:34:07.196Z"
+      "lastCheckedAt": "2026-09-28T18:31:15.268Z"
     },
     {
       "id": "seed-poloniusz-molde",
