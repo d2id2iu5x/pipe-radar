@@ -19,6 +19,20 @@ function text(value: unknown): string {
   return "";
 }
 
+function salary(value: unknown): string | undefined {
+  if (!value || typeof value !== "object") return undefined;
+  const money = value as JsonLdObject;
+  const amount = money.value && typeof money.value === "object" ? money.value as JsonLdObject : {};
+  const min = amount.minValue ?? amount.value ?? (typeof money.value === "number" ? money.value : undefined);
+  const max = amount.maxValue;
+  const unit = text(amount.unitText).toUpperCase();
+  const units: Record<string,string> = {HOUR:"h",DAY:"day",WEEK:"week",MONTH:"month",YEAR:"year"};
+  const currency = text(money.currency).toUpperCase();
+  if (typeof min !== "number" || !Number.isFinite(min) || min < 0 || !/^[A-Z]{3}$/.test(currency) || !units[unit]) return undefined;
+  if (max !== undefined && (typeof max !== "number" || !Number.isFinite(max) || max < min)) return undefined;
+  return `${min}${max !== undefined && max !== min ? "–"+max : ""} ${currency}/${units[unit]}`;
+}
+
 function address(posting: JsonLdObject): JsonLdObject {
   const location = Array.isArray(posting.jobLocation) ? posting.jobLocation[0] : posting.jobLocation;
   if (!location || typeof location !== "object") return {};
@@ -51,7 +65,8 @@ export function extractJobPostings(html: string, pageUrl: string): RawJob[] {
         company: text(organization.name) || "Nie podano",
         country: text(jobAddress.addressCountry) || "Nie podano",
         location: text(jobAddress.addressLocality) || text(jobAddress.addressRegion) || undefined,
-        description: text(posting.description),
+        description: load(text(posting.description)).text(),
+        rate: salary(posting.baseSalary),
         publishedAt: text(posting.datePosted) || undefined,
         employmentType: text(posting.employmentType) || undefined
       });

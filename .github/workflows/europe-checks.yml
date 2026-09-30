@@ -13,7 +13,7 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -24,6 +24,9 @@ jobs:
       - run: npm run check
       - run: npm run acceptance
       - run: npm run build
+      - name: Read-only source smoke test
+        run: node --import tsx scripts/probe-europe.ts
+        timeout-minutes: 6
       - name: Archive tested source
         if: always()
         run: git archive --format=tar.gz HEAD -o pipe-radar-source.tar.gz
@@ -35,3 +38,4 @@ jobs:
           path: |
             pipe-radar-source.tar.gz
             dist/
+            review/
