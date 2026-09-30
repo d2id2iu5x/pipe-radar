@@ -33,6 +33,10 @@ jobs:
       - name: Read-only source smoke test
         run: node --import tsx scripts/probe-europe.ts
         timeout-minutes: 6
+      - name: Source format diagnostics
+        if: always()
+        run: node --import tsx scripts/diagnose-europe.ts
+        timeout-minutes: 2
       - name: Archive tested source
         if: always()
         run: git archive --format=tar.gz HEAD -o pipe-radar-source.tar.gz
