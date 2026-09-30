@@ -1,11 +1,6 @@
 import { copyFile, mkdir, rm, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
-
-export interface StaticFile {
-  source: string;
-  target: string;
-}
-
+export interface StaticFile { source: string; target: string; }
 export function pipeRadarStaticFiles(root: string): StaticFile[] {
   return [
     { source: join(root, "index.html"), target: "index.html" },
@@ -17,7 +12,6 @@ export function pipeRadarStaticFiles(root: string): StaticFile[] {
     { source: join(root, "src/client/status-view.js"), target: "src/client/status-view.js" }
   ];
 }
-
 export async function buildStaticSite(options: { outputDirectory: string; files: StaticFile[] }): Promise<void> {
   await rm(options.outputDirectory, { recursive: true, force: true });
   await mkdir(options.outputDirectory, { recursive: true });
@@ -26,11 +20,21 @@ export async function buildStaticSite(options: { outputDirectory: string; files:
     await mkdir(dirname(target), { recursive: true });
     await copyFile(file.source, target);
     if (file.target === "index.html") {
-      const html = await readFile(target, "utf8");
+      let html = await readFile(target, "utf8");
+      // The legacy origin key is retained for saved filters, but now includes
+      // official sources outside Norway. Do not label JobTech as NAV.
+      html = html.replace("nav:'NAV — źródło pierwotne'", "nav:'Publiczne źródło ofert'")
+        .replace('NAV lub pracodawca','Urząd pracy lub pracodawca')
+        .replace('Źródła pierwotne: pracodawca lub NAV.','Źródła pierwotne: pracodawca lub urząd pracy.');
       if (html.includes('id="country"') && !html.includes('src="./src/client/europe-view.js"')) {
         if (!html.includes("</body>")) throw new Error("Missing HTML entry-point closing body");
-        await writeFile(target, html.replace("</body>", '<script type="module" src="./src/client/europe-view.js"></script>\n</body>'));
+        html=html.replace("</body>", '<script type="module" src="./src/client/europe-view.js"></script>\n</body>');
       }
+      await writeFile(target,html);
+    }
+    if (file.target === 'assets/i18n.js') {
+      const code=await readFile(target,'utf8');
+      await writeFile(target,code.replace('const EN = new Map(Object.entries({','const EN = new Map(Object.entries({\n"Publiczne źródło ofert":"Public job source",\n"Urząd pracy lub pracodawca":"Public employment service or employer",'));
     }
   }
 }

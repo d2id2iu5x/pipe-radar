@@ -26,7 +26,11 @@ export function createJobtechAdapter(): SourceAdapter {
         succeeded++;
         for (const item of data.hits) {
           const hit = object(item), description = object(hit.description), address = object(hit.workplace_address), employer = object(hit.employer);
-          const title = text(hit.headline), id = text(hit.id), country = text(address.country_code) || text(address.country) || "Nie podano";
+          const title = text(hit.headline), id = text(hit.id);
+          // JobTech uses internal numeric codes (e.g. 199), not ISO codes.
+          // Prefer the explicit workplace country; never infer it from the API's origin.
+          const code = text(address.country_code);
+          const country = text(address.country) || (/^[A-Za-z]{2}$/.test(code) ? code : "Nie podano");
           if (!id || !isRelevantJob({title, description:text(description.text)}) || !inEuropeanScope(country)) continue;
           const rawUrl = text(hit.webpage_url) || `https://arbetsformedlingen.se/platsbanken/annonser/${encodeURIComponent(id)}`;
           let publicUrl: URL;
