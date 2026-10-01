@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.4",
-  "generatedAt": "2026-10-01T13:20:16.350Z",
-  "lastSuccessfulScanAt": "2026-10-01T13:20:16.350Z",
+  "generatedAt": "2026-10-01T18:33:05.546Z",
+  "lastSuccessfulScanAt": "2026-10-01T18:33:05.546Z",
   "status": "partial",
   "jobs": [
     {
@@ -9,20 +9,8 @@
       "sourceId": "vaia",
       "sourceJobId": "Moja Norwegia",
       "sourceKind": "aggregator",
-      "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-offshore-shipyard-norway-flights-housing-116661769/",
+      "url": "https://talents.vaia.com/companies/moja-norwegia/pipe-fitter-norwegia-130956924/",
       "sources": [
-        {
-          "sourceId": "vaia",
-          "sourceJobId": "Moja Norwegia",
-          "kind": "aggregator",
-          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-offshore-shipyard-norway-flights-housing-116661769/"
-        },
-        {
-          "sourceId": "vaia",
-          "sourceJobId": "Moja Norwegia",
-          "kind": "aggregator",
-          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-norwegia-116660164/"
-        },
         {
           "sourceId": "vaia",
           "sourceJobId": "Moja Norwegia",
@@ -34,22 +22,34 @@
           "sourceJobId": "Moja Norwegia",
           "kind": "aggregator",
           "url": "https://talents.vaia.com/companies/moja-norwegia/pipe-fitter-offshore-shipyard-norway-flights-housing-131038322/"
+        },
+        {
+          "sourceId": "vaia",
+          "sourceJobId": "Moja Norwegia",
+          "kind": "aggregator",
+          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-offshore-shipyard-norway-flights-housing-116661769/"
+        },
+        {
+          "sourceId": "vaia",
+          "sourceJobId": "Moja Norwegia",
+          "kind": "aggregator",
+          "url": "https://talents.vaia.com/companies/moja-norwegia/wind-lake/pipe-fitter-norwegia-116660164/"
         }
       ],
-      "title": "Pipe Fitter — Offshore Shipyard, Norway | Flights & Housing",
+      "title": "Pipe fitter Norwegia",
       "company": "Moja Norwegia",
       "country": "US",
-      "location": "Wind Lake",
+      "location": "Nie podano",
       "employmentType": "Nie podano",
       "rotation": {
         "raw": "Nie podano",
         "normalized": null
       },
       "rate": {
-        "raw": "Nie podano",
-        "currency": null,
-        "hourlyMin": null,
-        "hourlyMax": null,
+        "raw": "280–300 NOK/h",
+        "currency": "NOK",
+        "hourlyMin": 280,
+        "hourlyMax": 300,
         "approximate": false
       },
       "housing": {
@@ -62,11 +62,11 @@
       },
       "skills": [],
       "tags": [],
-      "description": "Moja Norwegia poszukuje Pipe Fittera do renomowanej stoczni w Norwegii. Oferujemy stabilne zatrudnienie z rotacją 4/2 oraz wynagrodzenie w wysokości od 280 do 300 NOK/h w zależności od doświadczenia. Wymagane doświadczenie przy montażu precyzyjnych rur hydraulicznych w systemie Ermeto oraz umiejętność czytania rysunków izometrycznych. Dodatkowym atutem jest znajomość języka angielskiego lub norweskiego.  #J-18808-Ljbffr",
-      "publishedAt": "2026-06-06T07:53:57+00:00",
+      "description": "# Pipe fitter Norwegia**Vestland**  |  16-03-2026 12:19   |  Numer ogłoszenia: 105908* Pipe fitter* Przemysł stoczniowy**Pipe Fitter – Praca w Norwegii (stocznia)**Szukasz stabilnej pracy za granicą z dobrymi warunkami i pewnym zatrudnieniem?   Dołącz do naszego zespołu jako **Pipe Fitter** i pracuj na renomowanej stoczni w Norwegii!    Szukamy osób z doświadczeniem przy montażu **precyzyjnych rur hydraulicznych**. Rury gięte **giętarką trzpieniową**, połączenia **Ermeto**. Oferujemy:  280–300 NOK/h (w zależności od doświadczenia)  * Rotacja **4/2*** **Bezpłatne przeloty*** **Zakwaterowanie i pełne wyżywienie*** Stabilne zatrudnienie na **norweskich warunkach*** Pomoc koordynatora na miejscu* Wsparcie w organizacji wyjazdu  Wymagania:* Doświadczenie przy montażu i gięciu precyzyjnych rur hydraulicznych w systemie Ermeto* Umiejętność czytania **rysunków izometrycznych*** Znajomość języka angielskiego lub norweskiego będzie dodatkowym atutem Start pracy: jak najszybciejZainteresowany? Prześlij swoje CV lub skontaktuj się z nami – chętnie udzielimy szczegółowych informacji! #J-18808-Ljbffr",
+      "publishedAt": "2026-07-03T08:30:35+00:00",
       "firstSeenAt": "2026-09-25T12:29:44.461Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "active",
       "conflicts": [],
@@ -121,8 +121,8 @@
       "description": "Industrirörmontör till LM Vatten & Värme i Gällivare\nÄr du en skicklig och ansvarstagande industrirörmontör som gillar att lösa problem, arbeta praktiskt och se ett tydligt resultat av ditt arbete? Då kan du vara den vi söker.\nLM Vatten & Värme AB söker nu en industrirörmontör till vår verksamhet i Malmfälten, med utgångspunkt i Gällivare. Hos oss får du ett varierande arbete, stort eget ansvar och möjlighet att arbeta nära både kollegor och kunder i spännande industrimiljöer.\nOm rollen\nSom industrirörmontör hos oss arbetar du med installation, service, underhåll och reparation av rörsystem inom industrin. Arbetet sker ute hos våra kunder runt om i Malmfälten och kan omfatta både mindre serviceuppdrag och större entreprenader.\nDu blir en viktig del av laget och förväntas ta ansvar för att arbetet utförs säkert, noggrant och med hög kvalitet. Samtidigt står du aldrig ensam – hos oss hjälps vi åt, delar erfarenheter och löser utmaningar tillsammans.\nI rollen kommer du bland annat att:\nmontera, installera och reparera rörsystem i industrimiljö\narbeta med service, underhåll och ombyggnationer\nläsa och arbeta efter ritningar, arbetsbeskrivningar och tekniska underlag\nplanera ditt arbete tillsammans med arbetsledning och kollegor\nsamarbeta med kunder, beställare och andra yrkesgrupper ute på arbetsplatserna\nbidra till att arbetet genomförs effektivt, säkert och med rätt kvalitet\nuppmärksamma avvikelser och hjälpa till att hitta praktiska lösningar\n\nArbetet är självständigt, men bygger också på ett nära samarbete i arbetslaget. Vi söker därför dig som både kan ta egna initiativ och uppskattar att vara en del av ett lag där alla bidrar.\nVem är du?\nVi tror att du är en praktiskt lagd person med god teknisk förståelse och yrkesstolthet. Du tar ansvar för ditt arbete, håller det du lovar och lämnar efter dig ett resultat som du kan stå för.\nFör att trivas och lyckas i rollen tror vi att du:\nhar erfarenhet av industrirörmontage, VVS, processrör eller liknande arbete\nhar god teknisk förståelse och kan läsa ritningar\narbetar noggrant, strukturerat och med ett tydligt säkerhetstänk\när självgående och van att lösa problem ute på arbetsplatsen\när ansvarstagande och bidrar till ett bra samarbete\nhar lätt för att kommunicera med kunder, arbetsledning och kollegor\nhar B-körkort\n\nSvetskompetens och relevanta svetslicenser är meriterande, liksom erfarenhet från gruv-, process- eller annan tung industri. Även andra relevanta utbildningar och certifikat är ett plus.\nVi lägger stor vikt vid din personlighet och inställning. Du behöver inte kunna allt från första dagen, men du ska vilja göra ett bra jobb, utvecklas och bidra till laget.\nDet här är LM Vatten & Värme\nVi är ett lokalt företag med stark förankring i Gällivare och Malmfälten. Hos oss är beslutsvägarna korta, samarbetet nära och engagemanget stort. Vi känner våra kunder, vi känner vår marknad och vi är stolta över det arbete vi utför.\nSamtidigt är vi en del av Hjo Installation – en svensk installationskoncern med lokala bolag inom energioptimering, el, VS och ventilation. Det ger oss det bästa av två världar: den familjära känslan, närheten och handlingskraften i det lokala bolaget, tillsammans med kompetensen, erfarenhetsutbytet och tryggheten hos en större koncern.\nHjo Installations kultur bygger på samarbete och ett lösningsorienterat arbetssätt. Tillsammans arbetar vi för smarta och resurseffektiva installationer som minskar kundernas klimatavtryck och skapar långsiktigt värde. För oss handlar ett bra jobb inte bara om att leverera i dag – utan om att skapa hållbara värden för framtiden.\nVill du bli en del av vårt lag?\nHos oss får du arbeta tillsammans med kunniga och engagerade kollegor i en verksamhet där ditt yrkeskunnande uppskattas. Du får frihet under ansvar, varierande arbetsdagar och möjlighet att utvecklas tillsammans med företaget.\nKänner du igen dig? Då vill vi gärna höra från dig. Skicka in din ansökan redan i dag – urval och intervjuer sker löpande.",
       "publishedAt": "2026-09-14T08:05:55",
       "firstSeenAt": "2026-09-30T07:25:21.528Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -177,8 +177,8 @@
       "description": "Industrirörmontör till LM Vatten & Värme i Svappavaara/Kiruna\nÄr du en skicklig och ansvarstagande industrirörmontör som gillar att lösa problem, arbeta praktiskt och se ett tydligt resultat av ditt arbete? Då kan du vara den vi söker.\nLM Vatten & Värme AB söker nu en industrirörmontör till vår verksamhet i Malmfälten, med utgångspunkt i Svappavaara. Hos oss får du ett varierande arbete, stort eget ansvar och möjlighet att arbeta nära både kollegor och kunder i spännande industrimiljöer.\nOm rollen\nSom industrirörmontör hos oss arbetar du med installation, service, underhåll och reparation av rörsystem inom industrin. Arbetet sker ute hos våra kunder runt om i Malmfälten och kan omfatta både mindre serviceuppdrag och större entreprenader.\nDu blir en viktig del av laget och förväntas ta ansvar för att arbetet utförs säkert, noggrant och med hög kvalitet. Samtidigt står du aldrig ensam – hos oss hjälps vi åt, delar erfarenheter och löser utmaningar tillsammans.\nI rollen kommer du bland annat att:\nmontera, installera och reparera rörsystem i industrimiljö\narbeta med service, underhåll och ombyggnationer\nläsa och arbeta efter ritningar, arbetsbeskrivningar och tekniska underlag\nplanera ditt arbete tillsammans med arbetsledning och kollegor\nsamarbeta med kunder, beställare och andra yrkesgrupper ute på arbetsplatserna\nbidra till att arbetet genomförs effektivt, säkert och med rätt kvalitet\nuppmärksamma avvikelser och hjälpa till att hitta praktiska lösningar\n\nArbetet är självständigt, men bygger också på ett nära samarbete i arbetslaget. Vi söker därför dig som både kan ta egna initiativ och uppskattar att vara en del av ett lag där alla bidrar.\nVem är du?\nVi tror att du är en praktiskt lagd person med god teknisk förståelse och yrkesstolthet. Du tar ansvar för ditt arbete, håller det du lovar och lämnar efter dig ett resultat som du kan stå för.\nFör att trivas och lyckas i rollen tror vi att du:\nhar erfarenhet av industrirörmontage, VVS, processrör eller liknande arbete\nhar god teknisk förståelse och kan läsa ritningar\narbetar noggrant, strukturerat och med ett tydligt säkerhetstänk\när självgående och van att lösa problem ute på arbetsplatsen\när ansvarstagande och bidrar till ett bra samarbete\nhar lätt för att kommunicera med kunder, arbetsledning och kollegor\nhar B-körkort\n\nSvetskompetens och relevanta svetslicenser är meriterande, liksom erfarenhet från gruv-, process- eller annan tung industri. Även andra relevanta utbildningar och certifikat är ett plus.\nVi lägger stor vikt vid din personlighet och inställning. Du behöver inte kunna allt från första dagen, men du ska vilja göra ett bra jobb, utvecklas och bidra till laget.\nDet här är LM Vatten & Värme\nVi är ett lokalt företag med stark förankring i Gällivare och Malmfälten. Hos oss är beslutsvägarna korta, samarbetet nära och engagemanget stort. Vi känner våra kunder, vi känner vår marknad och vi är stolta över det arbete vi utför.\nSamtidigt är vi en del av Hjo Installation – en svensk installationskoncern med lokala bolag inom energioptimering, el, VS och ventilation. Det ger oss det bästa av två världar: den familjära känslan, närheten och handlingskraften i det lokala bolaget, tillsammans med kompetensen, erfarenhetsutbytet och tryggheten hos en större koncern.\nHjo Installations kultur bygger på samarbete och ett lösningsorienterat arbetssätt. Tillsammans arbetar vi för smarta och resurseffektiva installationer som minskar kundernas klimatavtryck och skapar långsiktigt värde. För oss handlar ett bra jobb inte bara om att leverera i dag – utan om att skapa hållbara värden för framtiden.\nVill du bli en del av vårt lag?\nHos oss får du arbeta tillsammans med kunniga och engagerade kollegor i en verksamhet där ditt yrkeskunnande uppskattas. Du får frihet under ansvar, varierande arbetsdagar och möjlighet att utvecklas tillsammans med företaget.\nKänner du igen dig? Då vill vi gärna höra från dig. Skicka in din ansökan redan i dag – urval och intervjuer sker löpande.",
       "publishedAt": "2026-09-14T08:01:30",
       "firstSeenAt": "2026-09-30T07:25:21.528Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -233,8 +233,8 @@
       "description": "Vill du påverka och göra skillnad på riktigt? Här bidrar du till att skapa trygghet för människor och samhällen. Det du gör spelar roll.\n\n\nDin roll\n\nI rollen som rörmontör ingår arbete och underhåll av fartyg med en hög teknisk nivå och komplexitet. Arbetet är varierande och ger goda möjligheter att utveckla ditt hantverk och yrkeskunnande.\nDina arbetsuppgifter består av bland annat;\nNytillverkning av enstycksdetaljer\nUnderhållsarbete\nRenovering och ombyggnationer av marinens ytfartyg\n\nArbetet utförs både ombord på fartyg och i verkstad. Resor inrikes kan förekomma.\n\n\n Din profil\n\nFör att kunna söka rollen har du:\nUtbildning inom vvs eller svets\nErfarenhet och kunskap i metoderna TIG och lödning\nNågra års erfarenhet av yrket\n\n \nArbetet kräver att du kan uttrycka dig i tal och skrift på svenska, samt innehar minst B-körkort.\n \nMeriterande för tjänsten är:\nLiftkort och erfarenhet av liftkörning\nErfarenheter från arbete med travers-, truck och mobil plattformsarbete, tunglyft arbeten.\nErfarenhet av att ha bearbetat material med bland annat borrning, svarvning, fräsning samt gängning\n\n \nFör att passa in på Saab Muskö är det viktigt att du har rätt inställning, starkt driv och viljan att utvecklas. Egenskaper som värderas är flexibilitet och samarbetsförmåga. Kvalitet är viktigt för oss i vårt arbete mot kund och internt därför ser vi gärna att du är noggrann och lösningsorienterad.\nArbetstiderna är dagtid och skift kan förekomma.\nBefattningen kräver att du genomgår och godkänns enligt vid var tid gällande bestämmelser för säkerhetsskydd. För befattningar där Saab har krav på säkerhetsklassinplacering kan, i förekommande fall, medföra krav på visst medborgarskap.\n\nVänligen observera att vi arbetar med löpande urval och att tjänsten kan komma att tillsättas innan sista ansökningsdatum har gått ut.\n\n\nVad du blir en del av\n\nUpptäck oändliga möjligheter. Anta utmaningar, skapa smarta innovationer och uppgradera dina förmågor. Det här är en plats för kluriga tänkare, modiga pionjärer och alla däremellan. Tillsammans uppnår vi det extraordinära, var och en tar med sitt unika perspektiv. Varje bidrag räknas.\nSaab är ett ledande försvars- och säkerhetsföretag med syfte att hjälpa nationer att skydda sin befolkning och bidra till trygghet för människor och samhällen. Med 28 000 talangfulla medarbetare utvecklar Saab teknik och lösningar för en säkrare och mer hållbar värld.\nSaab utvecklar, tillverkar och underhåller avancerade system inom flygteknik, vapen, ledningssystem, sensorer och undervattenssystem. Saab har sitt huvudkontor i Sverige men en global verksamhet där Saab är en del av många nationers försvarsförmåga. Läs mer om oss här",
       "publishedAt": "2026-09-30T14:51:34",
       "firstSeenAt": "2026-09-30T18:30:28.714Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -289,8 +289,8 @@
       "description": "Vi bidrar till att företag inom logistik och industri får en smidigare verksamhet genom att hitta smartare sätt att arbeta och förbättra sina flöden. \nVårt team består av specialister som säkerställer kvalitet och ansvar i varje del av uppdraget – från start till mål. MK Manning bistår med personaluthyrning, tar helhetsansvar för specifika uppdrag, matchar rätt kompetens vid rekrytering samt erbjuder rådgivning anpassad för branschens behov.\nDet här får du som medarbetare hos oss\n• Vi erbjuder en arbetsmiljö där du får möjlighet att pröva nya saker, inspireras av dina kollegor och känna glädje i ditt arbete.\n• Hos oss handlar det om att respektera varandra och bidra till en positiv atmosfär där alla bidrar till teamets framgång.\n• Du får chans att utvecklas både yrkesmässigt och personligt, tack vare varierade uppdrag och uppgifter hos våra olika kunder.\n• Vi satsar på tydligt och närvarande ledarskap, vilket innebär att din chef regelbundet finns tillgänglig för stöd och dialog, ibland så ofta som dagligen.\n• Att ge och få uppskattning, samarbeta och växa tillsammans är centralt i vår kultur.\nRörmontör sökes för UE-uppdrag inom industrin\nMK Manning söker nu erfarna rörmontörer för kommande och pågående UE-uppdrag hos våra kunder runt om i Sverige.\nVi söker dig som är en erfaren och självgående rörmontör och som är intresserad av att arbeta i projektform som underentreprenör.\nUppdragen finns inom olika delar av svensk industri och kan variera i både längd, arbetsort och omfattning. För rätt person finns goda möjligheter till återkommande och långsiktiga uppdrag.\nArbetsuppgifter\nBeroende på projekt kan arbetet bland annat innebära:\nMontage och installation av industriella rörsystem.\nKapning, inpassning och montering av rör och rördelar.\nArbete efter ritningar, isometrier och tekniska underlag.\nMontering av ventiler, flänsar och andra rörkomponenter.\nPassning och anpassning av rörsystem ute på arbetsplatsen.\nMekaniskt montage i samband med industriprojekt.\nSamarbete med svetsare, montörer och andra yrkesgrupper.\nSäkerställa att arbetet håller rätt kvalitet och följer gällande säkerhetskrav.\n\nVi söker dig som\nHar dokumenterad erfarenhet som rörmontör inom industri.\nHar erfarenhet av montage och installation av industriella rörsystem.\nÄr van att läsa ritningar, isometrier och tekniska underlag.\nHar kunskap om rör, flänsar, ventiler och andra komponenter.\nKan arbeta självständigt och ta ansvar för ditt arbete.\nÄr flexibel och kan arbeta på olika orter.\nÄr noggrann, professionell och lösningsorienterad.\nHar B-körkort.\nÄr intresserad av att arbeta genom ett UE-upplägg.\n\nMeriterande\nDet är meriterande om du även har:\nErfarenhet från processindustri.\nErfarenhet av prefabricering och inpassning av rör.\nErfarenhet av rostfria och svarta rörsystem.\nHeta Arbeten.\nSäkra Lyft.\nFallskydd.\nSSG.\nLiftkort.\nErfarenhet som resemontör.\nErfarenhet från större industriprojekt.\n\nVi erbjuder\nSpännande och varierande industriprojekt.\nUppdrag hos etablerade kunder runt om i Sverige.\nKonkurrenskraftig ersättning beroende på erfarenhet, kompetens och uppdrag.\nMöjlighet till längre och återkommande projekt.\nEtt flexibelt upplägg för dig som vill arbeta som underentreprenör.\nMöjlighet att utveckla ett långsiktigt samarbete med MK Manning.\n\nAnsökan\nSkicka in ditt CV tillsammans med information om din erfarenhet, relevanta utbildningar och tillgänglighet.\nHar du rätt erfarenhet men saknar ett färdigt UE-upplägg idag är du också välkommen att kontakta oss för mer information om hur samarbetet kan se ut.\nUrval och kontakt sker löpande.\nVälkommen att höra av dig till MK Manning!",
       "publishedAt": "2026-09-27T14:47:56",
       "firstSeenAt": "2026-09-30T07:25:21.528Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -345,8 +345,8 @@
       "description": "Vi bidrar till att företag inom logistik och industri får en smidigare verksamhet genom att hitta smartare sätt att arbeta och förbättra sina flöden. \nVårt team består av specialister som säkerställer kvalitet och ansvar i varje del av uppdraget – från start till mål. MK Manning bistår med personaluthyrning, tar helhetsansvar för specifika uppdrag, matchar rätt kompetens vid rekrytering samt erbjuder rådgivning anpassad för branschens behov.\nDet här får du som medarbetare hos oss\n• Vi erbjuder en arbetsmiljö där du får möjlighet att pröva nya saker, inspireras av dina kollegor och känna glädje i ditt arbete.\n• Hos oss handlar det om att respektera varandra och bidra till en positiv atmosfär där alla bidrar till teamets framgång.\n• Du får chans att utvecklas både yrkesmässigt och personligt, tack vare varierade uppdrag och uppgifter hos våra olika kunder.\n• Vi satsar på tydligt och närvarande ledarskap, vilket innebär att din chef regelbundet finns tillgänglig för stöd och dialog, ibland så ofta som dagligen.\n• Att ge och få uppskattning, samarbeta och växa tillsammans är centralt i vår kultur.\nRörmontör sökes för UE-uppdrag inom industrin\nMK Manning söker nu erfarna rörmontörer för kommande och pågående UE-uppdrag hos våra kunder runt om i Sverige.\nVi söker dig som är en erfaren och självgående rörmontör och som är intresserad av att arbeta i projektform som underentreprenör.\nUppdragen finns inom olika delar av svensk industri och kan variera i både längd, arbetsort och omfattning. För rätt person finns goda möjligheter till återkommande och långsiktiga uppdrag.\nArbetsuppgifter\nBeroende på projekt kan arbetet bland annat innebära:\nMontage och installation av industriella rörsystem.\nKapning, inpassning och montering av rör och rördelar.\nArbete efter ritningar, isometrier och tekniska underlag.\nMontering av ventiler, flänsar och andra rörkomponenter.\nPassning och anpassning av rörsystem ute på arbetsplatsen.\nMekaniskt montage i samband med industriprojekt.\nSamarbete med svetsare, montörer och andra yrkesgrupper.\nSäkerställa att arbetet håller rätt kvalitet och följer gällande säkerhetskrav.\n\nVi söker dig som\nHar dokumenterad erfarenhet som rörmontör inom industri.\nHar erfarenhet av montage och installation av industriella rörsystem.\nÄr van att läsa ritningar, isometrier och tekniska underlag.\nHar kunskap om rör, flänsar, ventiler och andra komponenter.\nKan arbeta självständigt och ta ansvar för ditt arbete.\nÄr flexibel och kan arbeta på olika orter.\nÄr noggrann, professionell och lösningsorienterad.\nHar B-körkort.\nÄr intresserad av att arbeta genom ett UE-upplägg.\n\nMeriterande\nDet är meriterande om du även har:\nErfarenhet från processindustri.\nErfarenhet av prefabricering och inpassning av rör.\nErfarenhet av rostfria och svarta rörsystem.\nHeta Arbeten.\nSäkra Lyft.\nFallskydd.\nSSG.\nLiftkort.\nErfarenhet som resemontör.\nErfarenhet från större industriprojekt.\n\nVi erbjuder\nSpännande och varierande industriprojekt.\nUppdrag hos etablerade kunder runt om i Sverige.\nKonkurrenskraftig ersättning beroende på erfarenhet, kompetens och uppdrag.\nMöjlighet till längre och återkommande projekt.\nEtt flexibelt upplägg för dig som vill arbeta som underentreprenör.\nMöjlighet att utveckla ett långsiktigt samarbete med MK Manning.\n\nAnsökan\nSkicka in ditt CV tillsammans med information om din erfarenhet, relevanta utbildningar och tillgänglighet.\nHar du rätt erfarenhet men saknar ett färdigt UE-upplägg idag är du också välkommen att kontakta oss för mer information om hur samarbetet kan se ut.\nUrval och kontakt sker löpande.\nVälkommen att höra av dig till MK Manning!",
       "publishedAt": "2026-09-27T14:45:17",
       "firstSeenAt": "2026-09-30T07:25:21.528Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -401,8 +401,8 @@
       "description": "Vi bidrar till att företag inom logistik och industri får en smidigare verksamhet genom att hitta smartare sätt att arbeta och förbättra sina flöden. \nVårt team består av specialister som säkerställer kvalitet och ansvar i varje del av uppdraget – från start till mål. MK Manning bistår med personaluthyrning, tar helhetsansvar för specifika uppdrag, matchar rätt kompetens vid rekrytering samt erbjuder rådgivning anpassad för branschens behov.\nDet här får du som medarbetare hos oss\n• Vi erbjuder en arbetsmiljö där du får möjlighet att pröva nya saker, inspireras av dina kollegor och känna glädje i ditt arbete.\n• Hos oss handlar det om att respektera varandra och bidra till en positiv atmosfär där alla bidrar till teamets framgång.\n• Du får chans att utvecklas både yrkesmässigt och personligt, tack vare varierade uppdrag och uppgifter hos våra olika kunder.\n• Vi satsar på tydligt och närvarande ledarskap, vilket innebär att din chef regelbundet finns tillgänglig för stöd och dialog, ibland så ofta som dagligen.\n• Att ge och få uppskattning, samarbeta och växa tillsammans är centralt i vår kultur.\nRörmontör sökes för UE-uppdrag inom industrin\nMK Manning söker nu erfarna rörmontörer för kommande och pågående UE-uppdrag hos våra kunder runt om i Sverige.\nVi söker dig som är en erfaren och självgående rörmontör och som är intresserad av att arbeta i projektform som underentreprenör.\nUppdragen finns inom olika delar av svensk industri och kan variera i både längd, arbetsort och omfattning. För rätt person finns goda möjligheter till återkommande och långsiktiga uppdrag.\nArbetsuppgifter\nBeroende på projekt kan arbetet bland annat innebära:\nMontage och installation av industriella rörsystem.\nKapning, inpassning och montering av rör och rördelar.\nArbete efter ritningar, isometrier och tekniska underlag.\nMontering av ventiler, flänsar och andra rörkomponenter.\nPassning och anpassning av rörsystem ute på arbetsplatsen.\nMekaniskt montage i samband med industriprojekt.\nSamarbete med svetsare, montörer och andra yrkesgrupper.\nSäkerställa att arbetet håller rätt kvalitet och följer gällande säkerhetskrav.\n\nVi söker dig som\nHar dokumenterad erfarenhet som rörmontör inom industri.\nHar erfarenhet av montage och installation av industriella rörsystem.\nÄr van att läsa ritningar, isometrier och tekniska underlag.\nHar kunskap om rör, flänsar, ventiler och andra komponenter.\nKan arbeta självständigt och ta ansvar för ditt arbete.\nÄr flexibel och kan arbeta på olika orter.\nÄr noggrann, professionell och lösningsorienterad.\nHar B-körkort.\nÄr intresserad av att arbeta genom ett UE-upplägg.\n\nMeriterande\nDet är meriterande om du även har:\nErfarenhet från processindustri.\nErfarenhet av prefabricering och inpassning av rör.\nErfarenhet av rostfria och svarta rörsystem.\nHeta Arbeten.\nSäkra Lyft.\nFallskydd.\nSSG.\nLiftkort.\nErfarenhet som resemontör.\nErfarenhet från större industriprojekt.\n\nVi erbjuder\nSpännande och varierande industriprojekt.\nUppdrag hos etablerade kunder runt om i Sverige.\nKonkurrenskraftig ersättning beroende på erfarenhet, kompetens och uppdrag.\nMöjlighet till längre och återkommande projekt.\nEtt flexibelt upplägg för dig som vill arbeta som underentreprenör.\nMöjlighet att utveckla ett långsiktigt samarbete med MK Manning.\n\nAnsökan\nSkicka in ditt CV tillsammans med information om din erfarenhet, relevanta utbildningar och tillgänglighet.\nHar du rätt erfarenhet men saknar ett färdigt UE-upplägg idag är du också välkommen att kontakta oss för mer information om hur samarbetet kan se ut.\nUrval och kontakt sker löpande.\nVälkommen att höra av dig till MK Manning!",
       "publishedAt": "2026-09-27T14:41:40",
       "firstSeenAt": "2026-09-30T07:25:21.528Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -457,8 +457,8 @@
       "description": "Redo att hitta din grej? Testa nytt, utbyt erfarenheter och upptäck vad du verkligen gillar att göra\nVi söker nu rörmontörer till vår unika produktion på ett av världens modernaste skeppsvarv. I din roll som rörmontör kommer dina främsta arbetsuppgifter vara riktade mot tillverkning och montering av rörsystem inom nybyggnad, ombyggnad och underhåll av ubåtar och ytfartyg.\nVi använder oss av svetsmetoder som TIG och orbital-svetsning. I rörsystemen förekommer material så som rostfritt, kopparnickel, koppar, titan och olegerat. Detta gör att jobbet är mycket varierande och ger goda möjligheter att utveckla ditt hantverk och yrkeskunnande.\nFör att lyckas som rörmontör hos oss så ser vi att du är samarbetsvillig, lösningsorienterad och noggrann.\n\n\nDin profil\n\nKrav\nGymnasieutbildning inom VVS eller motsvarande\nKunskap inom ritnings- och schemaläsning samt god material-och tillsatskännedom\nGrundläggande datavana\n\nMeriterande\nArbetat med hårdlödning, TIG-svetsning och om du innehar en svetslicens.\nTidigare bearbetat material genom bland annat borrning, gängning, bockning och kapning.\nKunskap om fästförband och mätteknik\n\nBefattningen kräver att du genomgår och godkänns enligt vid var tid gällande bestämmelser för säkerhetsskydd. För befattningar där Saab har krav på säkerhetsklassinplacering kan, i förekommande fall, medföra krav på visst medborgarskap.\n\n\nVad du blir en del av\n\nUpptäck oändliga möjligheter. Anta utmaningar, skapa smarta innovationer och uppgradera dina förmågor. Det här är en plats för kluriga tänkare, modiga pionjärer och alla däremellan. Tillsammans uppnår vi det extraordinära, var och en tar med sitt unika perspektiv. Varje bidrag räknas.\nSaab är ett ledande försvars- och säkerhetsföretag med uppdrag att hjälpa nationer att skydda sin befolkning och bidrar till trygghet för människor och samhällen. Med 26,100 talangfulla medarbetare utvecklar Saab teknik och lösningar för en säkrare och mer hållbar värld.\nSaab utvecklar, tillverkar och underhåller avancerade system inom flygteknik, vapen, ledningssystem, sensorer och undervattenssystem. Saab har sitt huvudkontor i Sverige men en global verksamhet där Saab är en del av många nationers försvarsförmåga. Läs mer om oss här\nVänligen observera att vi arbetar med löpande urval och tjänsten kan komma att tillsättas innan sista ansökningsdatum har gått ut.",
       "publishedAt": "2026-09-17T08:09:57",
       "firstSeenAt": "2026-09-30T07:25:21.528Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -513,8 +513,8 @@
       "description": "Är du en certifierad rörmontör som söker nya utmaningar? Vill du arbeta i ett växande företag där kvalitet, yrkesstolthet och kundnöjdhet står i fokus? Då kan du vara personen vi söker.\nOm oss\nEnergi & Miljöteknik Rör är ett specialiserat rörföretag med bas i Mölnlycke. Efter framgångsrik rörverksamhet inom Energi & Miljöteknik Sverige AB har vi tagit nästa steg och bildat ett eget bolag med fullt fokus på rörentreprenader, service, renoveringar och stambyten.\nVi kombinerar vi tryggheten från en etablerad verksamhet med möjligheten att vara med och bygga framtidens rörföretag.\nDina arbetsuppgifter\nInstallation, service och underhåll av rörsystem för vatten, avlopp och värme\nStambyten och renoveringsprojekt\nFelsökning och problemlösning\nSamarbete med kollegor, kunder och underentreprenörer\nArbete enligt gällande branschregler och säkerhetsföreskrifter\n\nVi söker dig som\nÄr certifierad rörmontör/VVS-montör\nHar minst tre års erfarenhet inom yrket\nHar god kunskap om Säker Vatteninstallation\nKan läsa ritningar och tekniska handlingar\nÄr självgående, lösningsorienterad och noggrann\nHar B-körkort\n\nVi erbjuder\nHos Energi & Miljöteknik Rör får du möjlighet att arbeta i en verksamhet som växer och utvecklas. Du blir en del av ett sammansvetsat team med hög yrkesstolthet, där du får stort eget ansvar, korta beslutsvägar och möjlighet att påverka. Vi erbjuder varierande projekt, goda utvecklingsmöjligheter och konkurrenskraftiga villkor i en trygg och långsiktig organisation.\nPlacering: Mölnlycke\nAnställningsform: Tillsvidare med 6 månaders provanställning\nUrval sker löpande, så skicka in din ansökan redan idag!",
       "publishedAt": "2026-09-09T16:26:31",
       "firstSeenAt": "2026-09-30T07:25:21.528Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -569,8 +569,8 @@
       "description": "Har du erfarenhet av att jobba som industrirörmontör eller svetsare inom verkstad, industri eller kärnkraft?\n\nVill du arbeta i ett stabilt och framtidsdrivet företag där du stöter på nya utmaningar och kan utvecklas?\n\nVi söker nu svetsare och rörmontörer till uppdrag i Oskarshamn.\n\n\n\nSom rörmontör och/eller svetsare hos Elajo arbetar du med underhållsprojekt, nyinstallationer eller ombyggnader av rörsystem/anläggningar hos kund eller ibland i vår egna verkstad. Arbetet utförs i varierande miljöer hos olika kunder.\n\nDu jobbar i ett team där ni tillsammans ansvarar för att utföra arbetet. Det innebär ett stort egenansvar där du tillsammans med kollegorna driver på arbetet och tar de kontakter som behövs för att lösa uppgiften. Du kommer utgå ifrån Oskarshamn, våra kunder finns i närområdet men möjlighet till att resa i arbetet finns om man vill.\n\nDå flertalet av våra kunder finns inom kärnkraftssektorn kommer vi att genomföra en säkerhetsprövningsintervju samt registerkontroll för säkerhetsskyddsklassade områden. Drogtest och läkarundersökning kommer även genomföras innan anställning.\n\n\n\nDet här kommer du bland annat att göra\n\nFör att kunna utföra ett bra arbete hos kund ser vi gärna att du har:\n\n- Utbildning inom verkstadstillverkning/industrirörmontage \n\n- Erfarenhet från rörinstallationer/underhållsarbete\n\n- Erfarenhet av TIG och MMA svetsning\n\n- Svetsarprövningar inom TIG är meriterande\n\n- Goda kunskaper i att läsa och förstå ritningar\n\n- Kunskaper och erfarenhet inom SS-EN ISO 3834-2 och SS EN 1090 är meriterande\n\n- Heta arbeten certifikat, travers- och truckkort, Mobil arbetsplattform och fallskyddsutbildning är meriterande\n\n- Behärska svenska väl i både tal och skrift\n\n- B-körkort\n\n\n\nÄr det här du?\n\nVi söker dig som har ett strukturerat och noggrant arbetssätt och som trivs när du får kombinera service, relationer och ansvar.\n\nVi ser gärna att du har:\n\n- Noggrannhet och ett starkt säkerhetstänk\n\n- Du är kontaktsökande och driven lagspelare\n\n- Du har god förmåga att kommunicera, är samarbetsvillig, flexibel och lyhörd.\n\n\nVi erbjuder dig ett arbete där ingen dag är den andra lik, du får möjlighet att utvecklas och arbeta med kompetenta medarbetare.\n\n\n\nDet här får du hos Elajo\n\n- Ett öppet arbetsklimat med stark laganda där vi stöttar varandra och har kul tillsammans\n\n- Trygghet och stabilitet\n\n- Alla medarbetare får tillgång till samtalsstöd kring hälsa, kris, sorg, stress men även ekonomi och juridik\n\n- Kollektivavtal, personalrabatter och friskvårdsbidrag tar du med enkelhet del av genom vår förmånsportal Elajo4U\n\n- Bred kunskap inom bolaget med fokus på teknikutveckling\n\n- En gemenskap och ett starkt affärsmannaskap\n\n\n\nBli en del av Elajo\n\nInom Elajo värdesätter vi att din personlighet stämmer överens med vår värdegrund, där våra värdeord är Engagemang, Utveckling, Öppenhet och Förtroende.\n\nVi värdesätter en rimlig balans mellan arbete-, privat- och familjeliv.\n\nVi eftersträvar en jämställd personalgrupp där mångfald råder. Det innebär för oss att alla medarbetare ska ha lika möjligheter och att olikheter ska finnas representerade, erkända och bejakade inom organisationen.\n\n\n\nOm Elajo\n\nElajo är en av Sveriges ledande aktörer inom el, säkerhet, mekanik och energi. Med över 800 medarbetare på 40 orter kombinerar vi bred kompetens med stark lokal närvaro.\n\n\n\nVälkommen med din ansökan!\n\nVill du ha en spännande roll inom verkstad, industri eller kärnkraft på ett bolag som ligger i framkant? Bli svetsare eller rörmontör i Oskarshamn - arbeta med underhåll, nyinstallationer och ombyggnader i varierade uppdrag med stark laganda och utvecklingsmöjligheter.\n\nDå ser vi fram emot att höra från dig!\n\nVi tar gärna emot din ansökan så snart som möjligt, sista ansökningsdag är 2026-10-31. Urvalet sker löpande, där tjänsterna kan komma att tillsättas innan sista ansökningsdag.\n\nPlaceringsort: Oskarshamn.\n\nFör ytterligare information, eller frågor om tjänsterna, är du välkommen att kontakta: \n\n- Lillemor Löfgren, Marknadsområdeschef avd Energi, telefon 0491-76760\n\n- Leif Skoglund, Resurs- och projektkoordinator, telefon 076-7623773\n\n\n\nInför denna rekrytering har Elajo tagit ställning till rekryteringskanaler och marknadsföring. Vi undanbeder oss därför vänligt men bestämt kontakt med mediesäljare, rekryteringsbolag och liknande.",
       "publishedAt": "2026-10-01T14:36:11",
       "firstSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -625,8 +625,8 @@
       "description": "Vi söker rörmontörer för projekt i Sverige.\nKraven för svetsare är:\n • Läsa isometriska ritningar\n • Ha erfarenhet av teknologiska rörledningsprojekt\n • En vilja att arbeta och utvecklas\nDu kommer att vara en del av ett team som arbetar med olika projekt inom industrier som olja, gas, petrokemi, massa- och papper samt gruvindustri.\nArbetsplatsen är i västra Sverige, runt Göteborg.",
       "publishedAt": "2026-09-29T09:26:00",
       "firstSeenAt": "2026-09-30T07:25:21.528Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -681,8 +681,8 @@
       "description": "Bilfinger is a leading international industrial services provider, driving efficiency and sustainability for the process industry. With about 31,000 employees and over €5.4 billion in revenue in 2025, we offer solutions in consulting, engineering, manufacturing, maintenance, turnarounds, and digital applications across key sectors like energy, chemicals, pharma, and oil & gas.Shape the future with Bilfinger UK: With a strong commitment to sustainability, Bilfinger UK stands out as a premier provider of engineering and maintenance services. For over 50 years, Bilfinger UK has consistently pushed the boundaries of innovation, delivering advanced solutions that support industries, infrastructure, and communities across the United Kingdom.As a key member of the globally respected Bilfinger Group, Bilfinger UK has built a reputation as a versatile leader, offering both onshore and offshore services. From energy and utilities to pharmaceuticals and petrochemicals, the company’s broad expertise across various sectors makes it a trusted partner in the industry, as well as a work environment where you can develop your potential. At Bilfinger, we offer a work environment where you can learn and grow. Join us and be part of a team shaping the future! \n Bilfinger UK are looking for a Pipefitter to join us at Wytch Farm in Dorset.\n\nStart asap\nDuration 6 weeks\n12 hours per day\nNAECI rates\nNVQ L3\nCCNSG or CSCS\n \nFor additional information please contact Anna Ferguson by email anna.ferguson.ext@bilfinger.com.Bilfinger is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to ethnicity, color, religion, sex, sexual orientation, gender identity, national origin, disability or other characteristics protected by law.If you are interested in an employment with Bilfinger, please submit your application in the safe environment of our global job portal only using the \"apply now\" button.",
       "publishedAt": "Wed Sep 16 00:00:00 UTC 2026",
       "firstSeenAt": "2026-09-30T07:25:21.528Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -737,8 +737,8 @@
       "description": "Bilfinger is a leading international industrial services provider, driving efficiency and sustainability for the process industry. With about 31,000 employees and over €5.4 billion in revenue in 2025, we offer solutions in consulting, engineering, manufacturing, maintenance, turnarounds, and digital applications across key sectors like energy, chemicals, pharma, and oil & gas.\nShape the future with Bilfinger UK: With a strong commitment to sustainability, Bilfinger UK stands out as a premier provider of engineering and maintenance services. For over 50 years, Bilfinger UK has consistently pushed the boundaries of innovation, delivering advanced solutions that support industries, infrastructure, and communities across the United Kingdom.\nAs a key member of the globally respected Bilfinger Group, Bilfinger UK has built a reputation as a versatile leader, offering both onshore and offshore services. From energy and utilities to pharmaceuticals and petrochemicals, the company’s broad expertise across various sectors makes it a trusted partner in the industry, as well as a work environment where you can develop your potential. \nAt Bilfinger, we offer a work environment where you can learn and grow. Join us and be part of a team shaping the future! \n Bilfinger UK are looking for Piping Superintendents to join us at Hinkley Point C in Bridgwater.\n\nStart asap\nLodge and travel in line with SSA\nSite bonus\n10/4 rotation\n10 hour shifts\nCCNSG required\nEither L3 Apprenticeship or L3 Diploma in Pipefitting, Pipework Fabrication, Pipe Welding or Marine Plumbing\n \nFor additional information please contact Anna Ferguson by email anna.ferguson.ext@bilfinger.com.\nBilfinger is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to ethnicity, color, religion, sex, sexual orientation, gender identity, national origin, disability or other characteristics protected by law.\nIf you are interested in an employment with Bilfinger, please submit your application in the safe environment of our global job portal only using the \"apply now\" button.",
       "publishedAt": "Wed Sep 23 02:00:00 UTC 2026",
       "firstSeenAt": "2026-09-30T07:25:21.528Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -793,8 +793,8 @@
       "description": "Bilfinger ist ein führender internationaler Industriedienstleister, der Effizienz und Nachhaltigkeit in der Prozessindustrie steigert. Mit über 31.000 Mitarbeitenden und einem Umsatz von über 5,4 Mrd. € in 2025 bieten wir Leistungen in Beratung, Engineering, Fertigung, Instandhaltung, Turnarounds und digitalen Anwendungen für Branchen wie Energie, Chemie, Pharma und Öl & Gas.\nWir sind Ihr Spezialist für Industriegerüstbau, Korrosionsschutz und Isoliertechnik. Mit unseren hoch qualifizierten Teams begleiten wir den gesamten Lebenszyklus industrieller Anlagen – von der Planung über Engineering, Fertigung und Montage bis hin zur Instandhaltung, Erweiterung und dem Rückbau. Dabei bieten wir nachhaltige Services entlang der gesamten industriellen Wertschöpfungskette.\nBei Bilfinger bieten wir Ihnen ein Arbeitsumfeld, in dem Sie sich ständig weiterentwickeln können. Werden Sie Teil von etwas Großem und gestalten Sie die Zukunft mit uns!\n Das bieten wir Ihnen für Ihren Einsatz: \n\n\nUnser Vergütungspaket – Unser Haustarif ist eingebunden in eine gesunde Tarif- und Konzernstruktur und angelehnt an den IG BCE inkl. Weihnachts- und Urlaubsgeld mit jährlichen Sonderzahlungen, sowie Arbeitgeberzuschüsse zur betrieblichen Altersvorsorge \n\n\nWork-life-balance – Bei uns arbeiten Sie 39 Stunden die Woche verbunden mit einem Arbeitszeitkonto und 30 Tage Erholungsurlaub im Kalenderjahr (zusätzliche Freistellung am 24.12. + 31.12. je einen halben Tag)\n\n\nAusrüstung – Ihre persönliche Arbeitskleidung und Schutzausrüstung (inkl. Werkzeug) wird von uns gestellt und gereinigt \n\n\nPersönliche Entwicklung – Neben der Bilfinger Academy, die Ihnen Lernen, Entwicklung und Vernetzung im Unternehmen ermöglicht, bieten wir auch fachliche Weiterentwicklung \n\n\n\nMitarbeiter werben Mitarbeiter – Prämienzahlung von bis zu €1000,00 pro erfolgreicher Einstellung\n\nCorporate-Benefits – Jeder Mitarbeitende von Bilfinger profitiert von den Preisnachlässen auf vielfältige Produkte und Dienstleistungen (z.B. Reisen, Leasingfahrzeuge oder Technik) und kann zu Sonderkonditionen in Fitnessstudios trainieren\n\n\n \nSo sieht Ihr Tag bei uns aus:\n\nIn Ihrem neuen Job kümmern Sie sichum die Montage sowie Demontage von Rohrleitungen und Konstruktionen\nZusätzlich sind Sie für selbstständiges Fertigen von Rohr- und Formteilen sowie Halterungen anhand von Zeichnungen, Übersichtsplänen und nach isometrischen Darstellungen verantwortlich\nDurch Ihr Fachwissen ist die Durchführung von Druckproben kein Problem für Sie\nAbschließend ist ein Teil Ihres neuen Jobs das Lesen von Isometrien, Zeichnungen und Plänen\n\n  \nDas bringen Sie mit:\n\n\nSie haben eine abgeschlosse Ausbildung zum Anlagenmechaniker (m/w/d) oder vergleichbar (z. B. Rohrschlosser (m/w/d), Heizungsbauer (m/w/d), Industriemechaniker (m/w/d)) \n\n\n\n\nOb Berufseinsteiger oder Facharbeiter mit langjähriger Erfahrung im industriellen Rohrleitungs- oder Anlagenbau, bei uns sind Sie in jedem Fall herzlich willkommen\n\n\nSie bringen idealerweise erste Berufserfahrung im Lesen von Isometrien und Fertigungszeichnungen \n\nSorgfältiges Arbeiten und Dokumentieren sowie Teamfähigkeit spiegelt sich in Ihrem täglichen Handeln wider\n\n \nUnsere Kolleginnen & Kollegen erzählen Ihnen >hier< gerne mehr über die Arbeit in der Mechanik\n \nBitte teilen Sie uns Ihren Gehaltswunsch mit, denn Transparenz im Bewerbungsprozess spielt bei uns eine wichtige Rolle. \nFür erste Fragen steht Ihnen Herr Dominik Müller gerne unter +49622165069-07 zur Verfügung. \nFür Fragen steht Ihnen Dominik Müller über dominik.mueller@bilfinger.com gerne zur Verfügung. \nWir begrüßen Bewerbungen von allen qualifizierten Personen – unabhängig von Geschlecht, Alter, Behinderung, ethnischer Herkunft, Religion oder Weltanschauung, sexueller Identität oder anderen gesetzlich geschützten Merkmalen.\nBitte nutzen Sie für Ihre Bewerbung ausschließlich den \"Jetzt bewerben \"-Button",
       "publishedAt": "Tue Sep 08 02:00:00 UTC 2026",
       "firstSeenAt": "2026-09-30T07:25:21.528Z",
-      "lastSeenAt": "2026-10-01T13:20:16.350Z",
-      "lastVerifiedAt": "2026-10-01T13:20:16.350Z",
+      "lastSeenAt": "2026-10-01T18:33:05.546Z",
+      "lastVerifiedAt": "2026-10-01T18:33:05.546Z",
       "missingSuccessfulScans": 0,
       "status": "new",
       "conflicts": [],
@@ -851,7 +851,7 @@
       "firstSeenAt": "2026-09-30T07:25:21.528Z",
       "lastSeenAt": "2026-09-30T18:30:28.714Z",
       "lastVerifiedAt": "2026-09-30T18:30:28.714Z",
-      "missingSuccessfulScans": 4,
+      "missingSuccessfulScans": 5,
       "status": "archived",
       "conflicts": [],
       "fit": {
@@ -1817,61 +1817,61 @@
       "id": "nav",
       "kind": "official-api",
       "status": "blocked",
-      "lastCheckedAt": "2026-10-01T13:20:16.357Z"
+      "lastCheckedAt": "2026-10-01T18:33:05.662Z"
     },
     {
       "id": "finn",
       "kind": "portal",
       "status": "success",
-      "lastCheckedAt": "2026-10-01T13:20:21.468Z"
+      "lastCheckedAt": "2026-10-01T18:33:10.764Z"
     },
     {
       "id": "adecco",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-10-01T13:20:18.621Z"
+      "lastCheckedAt": "2026-10-01T18:33:08.560Z"
     },
     {
       "id": "simona",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-10-01T13:20:16.932Z"
+      "lastCheckedAt": "2026-10-01T18:33:06.373Z"
     },
     {
       "id": "soprana",
       "kind": "employer",
       "status": "blocked",
-      "lastCheckedAt": "2026-10-01T13:20:17.307Z"
+      "lastCheckedAt": "2026-10-01T18:33:06.837Z"
     },
     {
       "id": "mojaNorwegia",
       "kind": "portal",
       "status": "partial",
-      "lastCheckedAt": "2026-10-01T13:20:18.226Z"
+      "lastCheckedAt": "2026-10-01T18:33:07.635Z"
     },
     {
       "id": "vaia",
       "kind": "aggregator",
       "status": "success",
-      "lastCheckedAt": "2026-10-01T13:20:17.850Z"
+      "lastCheckedAt": "2026-10-01T18:33:07.344Z"
     },
     {
       "id": "jobtech",
       "kind": "official-api",
       "status": "success",
-      "lastCheckedAt": "2026-10-01T13:20:19.663Z"
+      "lastCheckedAt": "2026-10-01T18:33:09.301Z"
     },
     {
       "id": "bilfinger",
       "kind": "employer",
       "status": "partial",
-      "lastCheckedAt": "2026-10-01T13:20:21.660Z"
+      "lastCheckedAt": "2026-10-01T18:33:11.879Z"
     },
     {
       "id": "silverhand",
       "kind": "portal",
       "status": "blocked",
-      "lastCheckedAt": "2026-10-01T13:20:18.865Z"
+      "lastCheckedAt": "2026-10-01T18:33:08.563Z"
     },
     {
       "id": "seed-poloniusz-molde",
