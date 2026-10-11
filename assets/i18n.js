@@ -5,11 +5,26 @@
     en: "PIPE RADAR v2.4.0 — automatic job snapshots"
   };
   const EN = new Map(Object.entries({
+    "Stawki brutto, netto i bez określonej podstawy nie są równoważne. Filtr NOK/h porównuje wyłącznie podane liczby; nie przelicza podatków, walut ani okresów płatności. Przed porównaniem potwierdź tę samą walutę, jednostkę i podstawę brutto/netto w źródłach.":"Gross, net and unspecified pay bases are not equivalent. The NOK/h filter compares stated numbers only; it does not convert taxes, currencies or payment periods. Before comparing, confirm the same currency, unit and gross/net basis in the sources.",
+    "Pochodzenie nieznane":"Unknown origin",
+    "Nie podano":"Not specified",
+    "Nieznane":"Unknown",
+    "Obserwuję":"Watching",
+    "CV gotowe":"CV ready",
+    "Aplikuję":"Applying",
+    "Zakończona":"Closed",
+    "Porównaj / usuń z porównania":"Compare / remove from comparison",
+    "Wybierz do trzech ofert lub użyj Top 3 z aktualnej listy.":"Select up to three jobs or use Top 3 from the current results.",
+    "Wyczyść filtry usuwa wszystkie ograniczenia listy, zachowując sortowanie. RESET przywraca także kolejność początkową.":"Clear filters removes all list restrictions while retaining the sort order. RESET also restores the original order.",
+    "Dane zapisują się w tej przeglądarce po potwierdzeniu. Nie edytuj równolegle starszej wersji PIPE RADAR. Zmiana adresu lub pliku może oznaczać inną pamięć.":"Data is saved in this browser after confirmation. Do not edit an older PIPE RADAR version at the same time. A different address or file may use separate storage.",
+    "Zmiany ofert utrwalono w tej przeglądarce.":"Job changes have been saved in this browser.",
+    "Źródła pierwotne: pracodawca lub urząd pracy. Portal i agregator to tropy. Otwórz źródło przed aplikacją. Status snapshotu nie potwierdza otwartej rekrutacji. Follow-up zapisuje datę lokalnie, bez automatycznych przypomnień.":"Primary sources: employer or public employment service. Portals and aggregators are leads. Open the source before applying. Snapshot status does not confirm that recruitment is open. Follow-up stores a date locally without automatic reminders.",
+    "Minimum 50% czasu wolnego (A/B: te same jednostki)": "At least 50% time off (A/B: same units)",
     "PIPE RADAR / v2.4.0 · AUTOMATYCZNE SNAPSHOTY OFERT": "PIPE RADAR / v2.4.0 · AUTOMATIC JOB SNAPSHOTS",
     "AUTOMATYCZNE SNAPSHOTY OFERT": "AUTOMATIC JOB SNAPSHOTS",
     "Ustaw warunki.": "Set your criteria.",
     "Porównaj. Zdecyduj.": "Compare. Decide.",
-    "Osobisty radar ofert dla doświadczonego montera rurociągów. Strona pobiera ostatni zwalidowany snapshot, a przy awarii wraca do bazy lokalnej. Część źródeł może być zablokowana lub niepełna. FIT jest jawną heurystyką, nie potwierdzoną zgodnością.": "A personal job radar for an experienced pipefitter. The site loads the latest validated snapshot and falls back to the local database if needed. Some sources may be blocked or incomplete. FIT is a transparent heuristic, not a confirmed match.",
+    "Osobisty radar ofert dla doświadczonego montera rurociągów. Strona pobiera ostatni zwalidowany snapshot, a przy awarii zachowuje ostatnią poprawną bazę w tej karcie. Część źródeł może być zablokowana lub niepełna. FIT jest jawną heurystyką, nie potwierdzoną zgodnością.": "A personal job radar for an experienced pipefitter. The site loads the latest validated snapshot and keeps the latest valid database in this tab on failure. Some sources may be blocked or incomplete. FIT is a transparent heuristic, not a confirmed match.",
     "TRYB LOKALNY": "LOCAL MODE", "DANE AKTUALNE": "DATA CURRENT", "DANE CZĘŚCIOWE": "PARTIAL DATA", "KOPIA AWARYJNA": "FALLBACK COPY",
     "Wszystkie kraje": "All countries", "Norwegia": "Norway", "Polska": "Poland", "Holandia": "Netherlands",
     "Wszystkie kontrakty": "All contracts", "Rotacja": "Rotation", "Etat": "Permanent", "Kontrakt": "Contract",
@@ -49,6 +64,14 @@
   }));
 
   const PATTERNS = [
+    [/^(.+) · Lokalny wpis$/, "$1 · Local entry"],
+    [/^Skąd FIT (\d+)\/100\?$/, "How is FIT $1/100 calculated?"],
+    [/^Notatka (.+)$/, "Note $1"],
+    [/^Otwórz źródło: (.+)$/, "Open source: $1"],
+    [/^(.+) · data w bazie (.+)$/, "$1 · recorded date $2"],
+    [/^(\d+) dni od zapisanej weryfikacji$/, "$1 days since the recorded check"],
+    [/^Zakwaterowanie · Nieznane$/, "Accommodation · Unknown"],
+    [/^Transport · Nieznane$/, "Travel · Unknown"],
     [/^Pokaż wyniki \((\d+)\) ↓$/, "Show results ($1) ↓"],
     [/^(\d+) wpisów · (\d+) poza archiwum · (\d+) archiwalne · aktualność rekrutacji wymaga sprawdzenia w źródle$/, "$1 entries · $2 active · $3 archived · recruitment status must be checked at source"],
     [/^(\d+) zapisanych wpisów · także z archiwum$/, "$1 saved entries · including archived"],
@@ -78,6 +101,8 @@
   }
 
   function translateNode(node) {
+    // Translate interface labels, never authored notes or executable/style text.
+    if (node.nodeType === Node.TEXT_NODE && node.parentElement?.closest('textarea,script,style,[contenteditable="true"]')) return;
     if (node.nodeType === Node.TEXT_NODE) {
       if (!originals.has(node)) originals.set(node, node.nodeValue ?? "");
       const original = originals.get(node);
@@ -121,3 +146,4 @@
   window.PIPE_RADAR_LANGUAGE = { set: applyLanguage, get: () => language };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true }); else init();
 })();
+

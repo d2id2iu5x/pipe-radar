@@ -127,7 +127,7 @@ textarea:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);ou
     <div>
       <div class="brand">PIPE RADAR / v2.4.0 · AUTOMATYCZNE SNAPSHOTY OFERT</div>
       <h1>Ustaw warunki.<br><span style="color:var(--accent)">Porównaj. Zdecyduj.</span></h1>
-      <div class="sub">Osobisty radar ofert dla doświadczonego montera rurociągów. Strona pobiera ostatni zwalidowany snapshot, a przy awarii wraca do bazy lokalnej. Część źródeł może być zablokowana lub niepełna. FIT jest jawną heurystyką, nie potwierdzoną zgodnością.</div>
+      <div class="sub">Osobisty radar ofert dla doświadczonego montera rurociągów. Strona pobiera ostatni zwalidowany snapshot, a przy awarii zachowuje ostatnią poprawną bazę w tej karcie. Część źródeł może być zablokowana lub niepełna. FIT jest jawną heurystyką, nie potwierdzoną zgodnością.</div>
     </div>
     <div class="top-actions">
       <div id="languageSwitch" class="language-switch" role="group" aria-label="Wybór języka">
@@ -162,7 +162,7 @@ textarea:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);ou
   <div class="filter-grid">
     <div class="field"><label for="minRate">Minimalna podstawa (NOK/h)</label><select id="minRate"><option value="0">Dowolna</option><option value="280">280+ NOK/h</option><option value="300">300+ NOK/h</option></select></div>
     <div class="field"><label for="minFit">Minimalny FIT (punkty /100)</label><select id="minFit"><option value="0">Dowolne</option><option value="85">85/100+</option><option value="90">90/100+</option><option value="95">95/100+</option></select></div>
-    <div class="field"><label for="rotationFilter">Rotacja</label><select id="rotationFilter"><option value="">Dowolna</option><option value="2/3">2/3</option><option value="3/1">3/1</option><option value="4/2">4/2</option><option value="6/2">6/2</option></select></div>
+    <div class="field"><label for="rotationFilter">Rotacja</label><select id="rotationFilter"><option value="">Dowolna</option><option value="free50">Minimum 50% czasu wolnego (A/B: te same jednostki)</option><option value="2/3">2/3</option><option value="3/1">3/1</option><option value="4/2">4/2</option><option value="6/2">6/2</option></select></div>
     <div class="field"><label for="benefitFilter">Warunki pakietu</label><select id="benefitFilter"><option value="">Dowolne</option><option value="housing">Opłacone zakwaterowanie</option><option value="travel">Opłacony transport</option><option value="complete">Zakwaterowanie + transport</option></select></div>
     <div class="field"><label for="sourceFilter">Źródło / potrzeba weryfikacji</label><select id="sourceFilter"><option value="">Wszystkie źródła</option><option value="primary">Tylko źródła pierwotne</option><option value="check">Do ręcznej weryfikacji</option></select></div>
     <div class="field"><label for="archiveFilter">Widok bazy</label><select id="archiveFilter"><option value="current">Bez archiwum</option><option value="archived">Archiwum</option><option value="all">Wszystkie wpisy</option></select></div><div class="field wide"><span>Stan filtrów</span><small id="filterHint">Wyniki aktualizują się po zmianie filtra.</small></div>
@@ -268,6 +268,7 @@ textarea:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);ou
       <div class="action-row" style="margin-top:0"><button type="button" class="primary" onclick="compareTop3()">PORÓWNAJ TOP 3</button><button type="button" class="secondary" onclick="clearComparison()">WYCZYŚĆ</button></div>
     </div>
     <p id="comparisonSummary" class="result-summary" role="status" aria-live="polite">Wybierz maksymalnie trzy oferty z kart albo użyj Top 3.</p>
+    <p class="note" id="comparisonRateBasis">Stawki brutto, netto i bez określonej podstawy nie są równoważne. Filtr NOK/h porównuje wyłącznie podane liczby; nie przelicza podatków, walut ani okresów płatności. Przed porównaniem potwierdź tę samą walutę, jednostkę i podstawę brutto/netto w źródłach.</p>
     <div id="comparisonGrid" class="compare-grid"></div>
   </div>
 
@@ -523,12 +524,23 @@ function parseRate(raw) {
   const min=Number(match[1].replace(',','.')), max=match[2] ? Number(match[2].replace(',','.')) : min;
   if(!Number.isFinite(min)||!Number.isFinite(max)||min<0||max<min) return {raw:text,kind:'unknown',min:null,max:null,guaranteed:null,label:'Nieznana podstawa'};
   const before=text.slice(0,match.index).trim();
+  if (/[-−\d.,]\s*$/.test(before)) return {raw:text,kind:'unknown',min:null,max:null,guaranteed:null,label:'Nieznana podstawa'};
   const approximate=/(?:~|około|ok\.)\s*$/i.test(before);
   const kind=approximate ? 'approximate' : match[2] ? 'range' : /(?:min\.?|minimum|od)\s*$/i.test(before) ? 'minimum' : 'fixed';
   const label=(approximate?'~':'')+min+(match[2]?'–'+max:'')+' NOK/h'+(kind==='minimum'?' (minimum)':'');
   return {raw:text,kind,min,max,guaranteed:approximate?null:min,label};
 }
 function rateMeets(job,minimum) {const rate=parseRate(job.rate); return !minimum || (rate.guaranteed!==null && rate.guaranteed>=minimum);}
+// Bare A/B uses the same unit on both sides; explicit mixed/unknown units need clarification.
+function rotationFreeShare(raw) {
+  const m=String(raw??'').trim().match(/^(\d+)\s*\/\s*(\d+)$/);
+  if(!m || Number(m[1])<=0)return null;
+  return Number(m[2])/(Number(m[1])+Number(m[2]))*100;
+}
+function rotationMeets(raw,filter) {
+  if(filter==='free50'){const share=rotationFreeShare(raw);return share!==null&&share>=50;}
+  return !filter||(String(raw).match(/\b\d+\/\d+\b/g)||[]).includes(filter);
+}
 function verificationAge(job, now=Date.now()) {
   const m=String(job.verified||'').match(/^(\d{2})\.(\d{2})\.(\d{4})$/);
   if(!m) return null;
@@ -571,7 +583,7 @@ function filterJobs(jobs,state,now=Date.now()) {
     const fullHousing=j.meta.housing==='provided',fullTravel=j.meta.travel==='provided';
     return (state.archive==='all'||(state.archive==='archived'?Boolean(j.meta.archived):!j.meta.archived))&&
       (!state.q||jobText(j).includes(normalize(state.q)))&&(!state.country||j.country===state.country)&&(!state.type||j.type===state.type)&&
-      rateMeets(j,state.minRate)&&getFit(j)>=state.minFit&&(!state.rotation||(String(j.rotation).match(/\b\d+\/\d+\b/g)||[]).includes(state.rotation))&&
+      rateMeets(j,state.minRate)&&getFit(j)>=state.minFit&&rotationMeets(j.rotation,state.rotation)&&
       (!state.benefit||(state.benefit==='housing'?fullHousing:state.benefit==='travel'?fullTravel:fullHousing&&fullTravel))&&
       (!state.source||(state.source==='primary'?isPrimary(j):needsReview(j,now)))&&
       (!state.iso||/izometr|\biso\b|rysunk|technical drawing/i.test(j.skills+' '+j.tags.join(' ')))&&(!state.newOnly||j.meta.isNew);
@@ -636,7 +648,7 @@ function renderSavedList(){
   const ids=Object.keys(savedState).filter(id=>findJob(id));
   $('savedSummary').textContent=ids.length+' zapisanych wpisów · także z archiwum';
   const signature=ids.join('|');if(signature===savedSignature && $('savedList').children.length)return;savedSignature=signature;
-  $('savedList').innerHTML=ids.length?ids.map(id=>{const j=findJob(id),entry=savedState[id];return `<article class="saved-item" data-saved-id="${esc(id)}"><strong>${esc(j.title)}</strong><small>${esc(j.company)} · ${j.meta.archived?'Archiwum':'Lokalny wpis'}</small><label>Status<select data-saved-field="status" data-id="${esc(id)}" aria-label="Status ${esc(j.company)}">${STATUSES.map(s=>`<option${s===entry.status?' selected':''}>${s}</option>`).join('')}</select></label><label>Termin follow-upu<input type="date" data-saved-field="followUp" data-id="${esc(id)}" aria-label="Follow-up ${esc(j.company)}" value="${esc(entry.followUp)}"></label><label>Notatka<textarea maxlength="600" data-saved-field="note" data-id="${esc(id)}" aria-label="Notatka ${esc(j.company)}">${esc(entry.note)}</textarea></label><div class="action-row"><button class="secondary" data-action="compare" data-id="${esc(id)}">Porównaj / usuń z porównania</button><button class="secondary" data-action="remove-saved" data-id="${esc(id)}">Usuń z zapisanych</button></div></article>`;}).join(''):'<div class="empty">Zapisz ofertę na karcie, aby dodać status, notatkę i datę follow-upu. Data nie wysyła powiadomień.</div>';
+  $('savedList').innerHTML=ids.length?ids.map(id=>{const j=findJob(id),entry=savedState[id];return `<article class="saved-item" data-saved-id="${esc(id)}"><strong>${esc(j.title)}</strong><small>${esc(j.company)} · ${j.meta.archived?'Archiwum':'Lokalny wpis'}</small><label>Status<select data-saved-field="status" data-id="${esc(id)}" aria-label="Status ${esc(j.company)}">${STATUSES.map(s=>`<option value="${esc(s)}"${s===entry.status?' selected':''}>${s}</option>`).join('')}</select></label><label>Termin follow-upu<input type="date" data-saved-field="followUp" data-id="${esc(id)}" aria-label="Follow-up ${esc(j.company)}" value="${esc(entry.followUp)}"></label><label>Notatka<textarea maxlength="600" data-saved-field="note" data-id="${esc(id)}" aria-label="Notatka ${esc(j.company)}">${esc(entry.note)}</textarea></label><div class="action-row"><button class="secondary" data-action="compare" data-id="${esc(id)}">Porównaj / usuń z porównania</button><button class="secondary" data-action="remove-saved" data-id="${esc(id)}">Usuń z zapisanych</button></div></article>`;}).join(''):'<div class="empty">Zapisz ofertę na karcie, aby dodać status, notatkę i datę follow-upu. Data nie wysyła powiadomień.</div>';
 }
 function toggleCompare(id){
   if(!findJob(id))return;
@@ -677,7 +689,7 @@ function draw(){
   $('best').textContent=current.length?Math.max(...current.map(getFit))+'/100':'—';
   const summaries=[];
   if(filters.q)summaries.push('fraza: '+filters.q);if(filters.country)summaries.push(filters.country);if(filters.type)summaries.push(filters.type);
-  if(filters.rotation)summaries.push('rotacja '+filters.rotation);if(filters.minRate)summaries.push('podstawa ≥ '+filters.minRate+' NOK/h');if(filters.minFit)summaries.push('FIT ≥ '+filters.minFit+'/100');
+  if(filters.rotation)summaries.push(filters.rotation==='free50'?'Minimum 50% czasu wolnego (A/B: te same jednostki)':'rotacja '+filters.rotation);if(filters.minRate)summaries.push('podstawa ≥ '+filters.minRate+' NOK/h');if(filters.minFit)summaries.push('FIT ≥ '+filters.minFit+'/100');
   if(filters.benefit)summaries.push({housing:'zakwaterowanie zapewnione',travel:'transport zapewniony',complete:'mieszkanie i transport zapewnione'}[filters.benefit]);
   if(filters.source)summaries.push(filters.source==='primary'?'źródła pierwotne':'do ręcznej weryfikacji');if(filters.iso)summaries.push('ISO / rysunki');if(filters.newOnly)summaries.push('oznaczone NOWA');
   const scope=filters.archive==='archived'?'archiwum':filters.archive==='all'?'cała baza':'bez archiwum';
@@ -728,15 +740,19 @@ function toLegacyRemoteJob(job){
   return {id:job.id,title:job.title,company:job.company,location:job.location,country:job.country,type:job.employmentType,
     rotation:job.rotation?.raw||'Nie podano',rate:job.rate?.raw||'Nie podano',housing:job.housing?.raw||'Nie podano',travel:job.travel?.raw||'Nie podano',
     skills:Array.isArray(job.skills)?job.skills.join(', '):String(job.skills||''),fit:Number(job.fit?.score??job.fit?.base??0),source:job.sourceId||'Źródło zdalne',url:job.url,
-    verified:remoteDate(job.lastVerifiedAt),tags:Array.isArray(job.tags)?job.tags:[],meta:{origin:remoteOrigin(job.sourceKind),housing:remoteBenefit(job.housing?.raw),travel:remoteBenefit(job.travel?.raw),archived:job.status==='archived',isNew:job.status==='new'}};
+    verified:remoteDate(job.lastVerifiedAt),tags:Array.isArray(job.tags)?job.tags:[],meta:{checkDate:job.status==='uncertain'||Boolean(job.conflicts?.length),origin:remoteOrigin(job.sourceKind),housing:remoteBenefit(job.housing?.raw),travel:remoteBenefit(job.travel?.raw),archived:job.status==='archived',isNew:job.status==='new'}};
 }
+let lastRemoteData=null;
 window.PIPE_RADAR_APP={
   fallback:EMBEDDED_JOBS,
   applyRemote(result){
-    JOBS=result.mode==='local'?EMBEDDED_JOBS.map(job=>({...job,tags:[...job.tags],meta:{...job.meta}})):result.jobs.map(toLegacyRemoteJob);
+    if(result.mode==='local'&&lastRemoteData)result={...lastRemoteData,mode:'fallback'};
+    else if(result.mode!=='local')lastRemoteData=result;
+    if(result.mode!=='local')JOBS=result.jobs.map(toLegacyRemoteJob);
     comparisonIds=comparisonIds.filter(id=>JOBS.some(job=>job.id===id));
     savedSignature='';
     render(false);
+    return result;
   }
 };
 
@@ -749,7 +765,7 @@ const target=document.getElementById('dataStatus');
 const refresh=document.getElementById('refreshJobs');
 async function refreshJobs(){
   refresh.disabled=true;
-  try{const result=await loadJobs({fallback:app.fallback,timeoutMs:8000});app.applyRemote(result);renderDataStatus(result,target);}
+  try{const result=await loadJobs({fallback:app.fallback,timeoutMs:8000});renderDataStatus(app.applyRemote(result),target);}
   finally{refresh.disabled=false;}
 }
 refresh.addEventListener('click',refreshJobs);
@@ -757,3 +773,4 @@ refreshJobs();
 </script>
 </body>
 </html>
+
