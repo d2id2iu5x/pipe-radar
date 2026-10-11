@@ -13,6 +13,18 @@ describe('V2 independent audit regression',()=>{
   it.each(['-300 NOK/h','1 300 NOK/h','1.300,00 NOK/h'])('never guarantees a misleading amount %s',raw=>{
     const w=boot(); expect(w.parseRate(raw).guaranteed).toBeNull();
   });
+  it.each([
+    ['min. 300 NOK/h','minimum',300],
+    ['MIN. 300 NOK/h','minimum',300],
+    ['minimum 300 NOK/h','minimum',300],
+    ['ok. 300 NOK/h','approximate',null],
+    ['OK. 300 NOK/h','approximate',null],
+  ])('preserves supported rate prefix %s and its filter meaning', (raw,kind,guaranteed)=>{
+    const w=boot();const rate=w.parseRate(raw);
+    expect(rate.kind).toBe(kind);expect(rate.min).toBe(300);expect(rate.guaranteed).toBe(guaranteed);
+    expect(w.rateMeets({rate:raw},300)).toBe(guaranteed===300);
+    expect(w.rateMeets({rate:raw},301)).toBe(false);
+  });
   it.each([['14/14',50],['3/3',50],['4/4',50],['14/21',60],['6/2',25]])('computes free fraction %s independently', (raw,expected)=>{
     const w=boot();expect(w.rotationFreeShare(raw)).toBe(expected);
   });

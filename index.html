@@ -524,7 +524,9 @@ function parseRate(raw) {
   const min=Number(match[1].replace(',','.')), max=match[2] ? Number(match[2].replace(',','.')) : min;
   if(!Number.isFinite(min)||!Number.isFinite(max)||min<0||max<min) return {raw:text,kind:'unknown',min:null,max:null,guaranteed:null,label:'Nieznana podstawa'};
   const before=text.slice(0,match.index).trim();
-  if (/[-−\d.,]\s*$/.test(before)) return {raw:text,kind:'unknown',min:null,max:null,guaranteed:null,label:'Nieznana podstawa'};
+  // Supported min./ok. prefixes are words, not truncated numeric fragments.
+  const numericPrefix=before.replace(/\b(?:min|ok)\.$/i,'').trim();
+  if (/[-−\d.,]\s*$/.test(numericPrefix)) return {raw:text,kind:'unknown',min:null,max:null,guaranteed:null,label:'Nieznana podstawa'};
   const approximate=/(?:~|około|ok\.)\s*$/i.test(before);
   const kind=approximate ? 'approximate' : match[2] ? 'range' : /(?:min\.?|minimum|od)\s*$/i.test(before) ? 'minimum' : 'fixed';
   const label=(approximate?'~':'')+min+(match[2]?'–'+max:'')+' NOK/h'+(kind==='minimum'?' (minimum)':'');
