@@ -20,6 +20,10 @@ a{color:inherit}
 h1{font-size:clamp(32px,6vw,62px);line-height:.95;margin:12px 0 10px;max-width:850px}
 .sub{color:var(--muted);max-width:760px;font-size:16px}
 .badge{border:1px solid #2d5660;background:#0b2228;color:#8df0c9;border-radius:999px;padding:8px 12px;font-size:12px;white-space:nowrap}
+#dataStatus{max-width:360px;white-space:normal;border-radius:14px;overflow-wrap:anywhere}
+#dataStatus>strong,#dataStatus>small{display:block}
+#dataStatus>small{margin-top:4px;font-size:12px}
+#dataStatus[data-needs-verification="true"]{color:var(--warn);border-color:var(--warn)}
 .top-actions{display:flex;flex-direction:column;align-items:flex-end;gap:8px}.language-switch{display:flex;gap:6px}.language-button{padding:7px 10px;border:1px solid var(--line);background:#0d1823;color:var(--muted);font-size:12px}.language-button[aria-pressed="true"]{border-color:var(--accent);color:var(--text);background:#103129}.language-button .flag{font-size:16px;margin-right:4px}
 .hero{margin-top:24px;padding:20px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,#0c1823,#0a141e);box-shadow:0 18px 60px #0005}
 .search{display:grid;grid-template-columns:1fr 170px 170px auto;gap:10px}
@@ -761,13 +765,14 @@ window.PIPE_RADAR_APP={
 </script>
 <script type="module">
 import { loadJobs } from './src/client/remote-data.js';
-import { renderDataStatus } from './src/client/status-view.js';
+import { createDataStatusView } from './src/client/status-view.js';
 const app=window.PIPE_RADAR_APP;
 const target=document.getElementById('dataStatus');
+const statusView=createDataStatusView(target);
 const refresh=document.getElementById('refreshJobs');
 async function refreshJobs(){
   refresh.disabled=true;
-  try{const result=await loadJobs({fallback:app.fallback,timeoutMs:8000});renderDataStatus(app.applyRemote(result),target);}
+  try{const result=await loadJobs({fallback:app.fallback,timeoutMs:8000});statusView.update(app.applyRemote(result));}
   finally{refresh.disabled=false;}
 }
 refresh.addEventListener('click',refreshJobs);

@@ -21,6 +21,14 @@ Stabilny `NAV_FEED_TOKEN` trzeba uzyskać zgodnie z aktualnymi warunkami NAV; to
 
 Przycisk „Pobierz najnowszą bazę” pobiera ostatni zapisany snapshot, ale sam nie uruchamia skanu. Ręczny skan można uruchomić w GitHub Actions przez workflow `Scan job offers`. Szczegóły źródeł opisuje [polityka źródeł](docs/operations/source-policy.md).
 
+## Aktualność informacji o skanie (R27)
+
+Etykieta uwzględnia `lastSuccessfulScanAt`, a nie datę pobrania ani `generatedAt` pliku. Roboczy próg ostrzegawczy wynosi **więcej niż 24 godziny** (przy planowanym skanie co 6 godzin); dokładnie 24 godziny nie przekracza progu. Po jego przekroczeniu pojawia się **DANE WYMAGAJĄ PONOWNEJ WERYFIKACJI**, data skanu oraz przyczyna. Brak daty, nieprawidłowy format/kalendarz, brak strefy czasowej i data z przyszłości również wymagają weryfikacji.
+
+Informacja o częściowo niedostępnych źródłach, kopii awaryjnej lub trybie lokalnym pozostaje widoczna. Pomyślne pobranie pliku nie odmładza bazy. Widok przelicza wiek także w otwartej karcie i po powrocie do niej, bez dodatkowych zapytań sieciowych. Ocena opiera się na zegarze urządzenia; błędny zegar może wymagać korekty.
+
+Ostrzeżenie dotyczy wieku całej bazy. Nie usuwa ofert i nie zmienia klasyfikacji pojedynczych ogłoszeń, ulubionych ani reguł archiwizacji. Niedawny skan nie potwierdza, że konkretna rekrutacja nadal trwa.
+
 Ustawienia Cloudflare Pages:
 
 - komenda budowania: `npm run build`
