@@ -58,7 +58,9 @@
       "origin": "employer",
       "housing": "unknown",
       "travel": "unknown",
-      "isNew": true
+      "isNew": true,
+      "archived": true,
+      "reason": "Sprawdzono 16.10.2026: termin zgłoszeń 15.06.2026 zakończony (Jobbsafari); identyczne ogłoszenie oznaczone jako nieaktywne w Lønna."
     }
   },
   {

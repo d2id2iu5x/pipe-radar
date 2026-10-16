@@ -1,5 +1,7 @@
 # Ręczna kontrola ofert Pipe Radar — 16.10.2026
 
+Aktualizacja po dalszej kontroli stron pracodawców: Simona została zarchiwizowana po potwierdzeniu końca tej konkretnej publikacji w zgodnych kopiach ogłoszenia. Poloniusz pozostaje niepewny z powodu sprzecznych informacji. [Szczegóły kontroli i źródła](employer-audit-2026-10-16.md). Poniższy zapis opisuje wcześniejszą partię i został zachowany jako historia.
+
 Sprawdzono 33 niearchiwalne rekordy (34 adresy źródłowe) na bazie `b23cf6bc722eed19ac7798f5bd00ff8f96d30ad6`. Potwierdzono wygaśnięcie 5 ofert. Dla 26 ofert strona nadal prezentuje treść ogłoszenia lub ścieżkę zgłoszenia; to nie jest gwarancja prowadzenia rekrutacji przez pracodawcę. Dwie oferty pozostają nierozstrzygnięte.
 
 Decyzje o archiwizacji oparto na bezpośrednim odczycie stron w przeglądarce 16.10.2026. Starszy odczyt indeksu wyszukiwarki dla Bilfinger Perenco Wytch Farm pokazywał jeszcze przycisk zgłoszenia; bieżąca strona informowała już o obsadzeniu stanowiska. Przyjęto bieżący komunikat źródła.

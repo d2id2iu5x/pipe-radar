@@ -1651,7 +1651,7 @@
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
         "missingSuccessfulScans": 0,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 90,
@@ -6765,7 +6765,7 @@
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
         "missingSuccessfulScans": 0,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 90,
@@ -7638,6 +7638,15 @@
         "status": "archived",
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "archivedAt": "2026-10-16T15:10:42.439Z",
+        "reason": "explicit-inactive"
+      },
+      "simona-pipefitter": {
+        "id": "simona-pipefitter",
+        "sourceId": "seed-simona-pipefitter",
+        "sourceJobId": "simona-pipefitter",
+        "status": "archived",
+        "lastSeenAt": "2026-09-15T00:00:00.000Z",
+        "archivedAt": "2026-10-16T15:34:19Z",
         "reason": "explicit-inactive"
       }
     },

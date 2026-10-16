@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { loadSeedSnapshot } from "../../src/storage/seed-snapshot.js";
 
 describe("confirmed archive in recovery data", () => {
-  it.each(["fjordpipe-nav", "tess-finn"])("preserves the source-confirmed archive %s without changing its verification date", async id => {
+  it.each(["fjordpipe-nav", "tess-finn", "simona-pipefitter"])("preserves the source-confirmed archive %s without changing its verification date", async id => {
     const seed = await loadSeedSnapshot();
     const job = seed.jobs.find(job => job.id === id);
     expect(job?.status).toBe("archived");

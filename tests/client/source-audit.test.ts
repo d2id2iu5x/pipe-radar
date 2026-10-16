@@ -3,6 +3,11 @@ import { beforeEach, describe, expect, it } from "vitest";
 
 const reviewed = [
   {
+    "id": "simona-pipefitter",
+    "url": "https://www.simona-stadpipe.com/en/career/industrial-construction-pipefitter-rotational-work/",
+    "reason": "Sprawdzono 16.10.2026: termin zgłoszeń 15.06.2026 zakończony (Jobbsafari); identyczne ogłoszenie oznaczone jako nieaktywne w Lønna."
+  },
+  {
     "id": "jobtech:31487016",
     "url": "https://arbetsformedlingen.se/platsbanken/annonser/31487016",
     "reason": "Potwierdzone 16.10.2026: Platsbanken oznacza termin zgłoszeń SAAB jako zakończony (15.10.2026)."
@@ -28,7 +33,7 @@ const reviewed = [
     "reason": "Potwierdzone 16.10.2026: FINN oznacza termin zgłoszeń jako zakończony (15.09.2026)."
   }
 ];
-const seedIds = ["fjordpipe-nav", "tess-finn"];
+const seedIds = ["fjordpipe-nav", "tess-finn", "simona-pipefitter"];
 function boot() {
   const html = readFileSync("index.html", "utf8");
   document.documentElement.innerHTML = html;
@@ -71,6 +76,16 @@ describe("source audit archives (offline fixtures)", () => {
     expect(document.querySelector(`#grid [data-job-id="${id}"]`)).toBeNull();
     archiveView(w);
     expect(document.querySelector(`#grid [data-job-id="${id}"]`)?.textContent).toContain(reviewed.find(record => record.id === id)!.reason);
+  });
+
+  it("keeps the unresolved Poloniusz offer visible without an archive claim", () => {
+    const w = boot();
+    const job = w.PIPE_RADAR_APP.fallback.find((record: any) => record.id === "poloniusz-molde");
+    expect(job).toBeDefined();
+    expect(job.meta?.archived).not.toBe(true);
+    expect(document.querySelector('#grid [data-job-id="poloniusz-molde"]')).not.toBeNull();
+    archiveView(w);
+    expect(document.querySelector('#grid [data-job-id="poloniusz-molde"]')).toBeNull();
   });
 
 });
