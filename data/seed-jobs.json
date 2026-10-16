@@ -308,7 +308,9 @@
       "url": "https://arbeidsplassen.nav.no/stillinger/stilling/c83de50f-8800-4849-ade5-b387c7954951",
       "origin": "nav",
       "housing": "unknown",
-      "travel": "unknown"
+      "travel": "unknown",
+      "archived": true,
+      "reason": "Potwierdzone 16.10.2026: NAV oznacza ogłoszenie Fjordpipe jako nieaktywne."
     }
   },
   {
@@ -367,7 +369,9 @@
       "url": "https://www.finn.no/job/ad/473893035",
       "origin": "portal",
       "housing": "unknown",
-      "travel": "unknown"
+      "travel": "unknown",
+      "archived": true,
+      "reason": "Potwierdzone 16.10.2026: FINN oznacza termin zgłoszeń jako zakończony (15.09.2026)."
     }
   },
   {

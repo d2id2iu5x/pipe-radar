@@ -840,7 +840,7 @@
       "lastSeenAt": "2026-10-15T18:48:35.789Z",
       "lastVerifiedAt": "2026-10-15T18:48:35.789Z",
       "missingSuccessfulScans": 2,
-      "status": "uncertain",
+      "status": "archived",
       "conflicts": [],
       "fit": {
         "base": 0,
@@ -1288,7 +1288,7 @@
       "lastSeenAt": "2026-10-06T18:31:12.076Z",
       "lastVerifiedAt": "2026-10-06T18:31:12.076Z",
       "missingSuccessfulScans": 0,
-      "status": "active",
+      "status": "archived",
       "conflicts": [],
       "fit": {
         "base": 0,
@@ -1456,7 +1456,7 @@
       "lastSeenAt": "2026-10-02T12:33:56.829Z",
       "lastVerifiedAt": "2026-10-02T12:33:56.829Z",
       "missingSuccessfulScans": 0,
-      "status": "active",
+      "status": "archived",
       "conflicts": [],
       "fit": {
         "base": 0,
@@ -2203,7 +2203,7 @@
       "lastSeenAt": "2026-09-15T00:00:00.000Z",
       "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
       "missingSuccessfulScans": 0,
-      "status": "uncertain",
+      "status": "archived",
       "conflicts": [],
       "fit": {
         "base": 91,
@@ -2338,7 +2338,7 @@
       "lastSeenAt": "2026-09-15T00:00:00.000Z",
       "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
       "missingSuccessfulScans": 0,
-      "status": "uncertain",
+      "status": "archived",
       "conflicts": [],
       "fit": {
         "base": 76,

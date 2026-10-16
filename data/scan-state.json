@@ -841,7 +841,7 @@
         "lastSeenAt": "2026-10-15T18:48:35.789Z",
         "lastVerifiedAt": "2026-10-15T18:48:35.789Z",
         "missingSuccessfulScans": 2,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 0,
@@ -1289,7 +1289,7 @@
         "lastSeenAt": "2026-10-06T18:31:12.076Z",
         "lastVerifiedAt": "2026-10-06T18:31:12.076Z",
         "missingSuccessfulScans": 0,
-        "status": "active",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 0,
@@ -1457,7 +1457,7 @@
         "lastSeenAt": "2026-10-02T12:33:56.829Z",
         "lastVerifiedAt": "2026-10-02T12:33:56.829Z",
         "missingSuccessfulScans": 0,
-        "status": "active",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 0,
@@ -2204,7 +2204,7 @@
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
         "missingSuccessfulScans": 0,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 91,
@@ -2339,7 +2339,7 @@
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
         "missingSuccessfulScans": 0,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 76,
@@ -5955,7 +5955,7 @@
         "lastSeenAt": "2026-10-15T18:48:35.789Z",
         "lastVerifiedAt": "2026-10-15T18:48:35.789Z",
         "missingSuccessfulScans": 2,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 0,
@@ -6403,7 +6403,7 @@
         "lastSeenAt": "2026-10-06T18:31:12.076Z",
         "lastVerifiedAt": "2026-10-06T18:31:12.076Z",
         "missingSuccessfulScans": 0,
-        "status": "active",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 0,
@@ -6571,7 +6571,7 @@
         "lastSeenAt": "2026-10-02T12:33:56.829Z",
         "lastVerifiedAt": "2026-10-02T12:33:56.829Z",
         "missingSuccessfulScans": 0,
-        "status": "active",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 0,
@@ -7318,7 +7318,7 @@
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
         "missingSuccessfulScans": 0,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 91,
@@ -7453,7 +7453,7 @@
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
         "missingSuccessfulScans": 0,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 76,
@@ -7593,6 +7593,51 @@
         "status": "archived",
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "archivedAt": "2026-10-16T14:43:47.195Z",
+        "reason": "explicit-inactive"
+      },
+      "jobtech:31487016": {
+        "id": "jobtech:31487016",
+        "sourceId": "jobtech",
+        "sourceJobId": "31487016",
+        "status": "archived",
+        "lastSeenAt": "2026-10-15T18:48:35.789Z",
+        "archivedAt": "2026-10-16T15:10:42.439Z",
+        "reason": "explicit-inactive"
+      },
+      "bilfinger:https://jobs.bilfinger.com/job/Bridgwater-Piping-Superintendent-HPC-SOM-Bridgwater/1427056333/": {
+        "id": "bilfinger:https://jobs.bilfinger.com/job/Bridgwater-Piping-Superintendent-HPC-SOM-Bridgwater/1427056333/",
+        "sourceId": "bilfinger",
+        "sourceJobId": "https://jobs.bilfinger.com/job/Bridgwater-Piping-Superintendent-HPC-SOM-Bridgwater/1427056333/",
+        "status": "archived",
+        "lastSeenAt": "2026-10-06T18:31:12.076Z",
+        "archivedAt": "2026-10-16T15:10:42.439Z",
+        "reason": "explicit-inactive"
+      },
+      "bilfinger:https://jobs.bilfinger.com/job/Wareham-Pipefitter-Perenco-Wytch-Farm-DOR-Wareham/1437593533/": {
+        "id": "bilfinger:https://jobs.bilfinger.com/job/Wareham-Pipefitter-Perenco-Wytch-Farm-DOR-Wareham/1437593533/",
+        "sourceId": "bilfinger",
+        "sourceJobId": "https://jobs.bilfinger.com/job/Wareham-Pipefitter-Perenco-Wytch-Farm-DOR-Wareham/1437593533/",
+        "status": "archived",
+        "lastSeenAt": "2026-10-02T12:33:56.829Z",
+        "archivedAt": "2026-10-16T15:10:42.439Z",
+        "reason": "explicit-inactive"
+      },
+      "fjordpipe-nav": {
+        "id": "fjordpipe-nav",
+        "sourceId": "seed-fjordpipe-nav",
+        "sourceJobId": "fjordpipe-nav",
+        "status": "archived",
+        "lastSeenAt": "2026-09-15T00:00:00.000Z",
+        "archivedAt": "2026-10-16T15:10:42.439Z",
+        "reason": "explicit-inactive"
+      },
+      "tess-finn": {
+        "id": "tess-finn",
+        "sourceId": "seed-tess-finn",
+        "sourceJobId": "tess-finn",
+        "status": "archived",
+        "lastSeenAt": "2026-09-15T00:00:00.000Z",
+        "archivedAt": "2026-10-16T15:10:42.439Z",
         "reason": "explicit-inactive"
       }
     },

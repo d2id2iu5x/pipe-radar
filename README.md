@@ -31,6 +31,8 @@ Ostrzeżenie dotyczy wieku całej bazy. Nie usuwa ofert i nie zmienia klasyfikac
 
 Korekta zgłoszenia z 16.10.2026: ofertę Indeed `c15ed66dface1e9c` oznaczono jako archiwalną po potwierdzeniu komunikatu o wygaśnięciu. Przywrócono też dwie wcześniejsze decyzje archiwizacji zapisane w bazie początkowej. Upływ czasu ani awaria źródła nie przywracają już zarchiwizowanej oferty do zwykłych wyników; może to zrobić ponowna obserwacja oferty przez źródło. Wpis pozostaje w archiwum, a zapisane notatki użytkownika są zachowane. Indeed ma tryb `probe-only` i nie jest źródłem regularnego importu; ta korekta nie dodaje skanowania Indeed.
 
+Dalsza ręczna kontrola 16.10.2026 objęła wszystkie 33 pozostałe niearchiwalne rekordy. Pięć potwierdzonych wygasłych ofert przeniesiono do archiwum; pozostałe rekordy i datę skanu zachowano. [Wyniki kontroli i źródła](docs/operations/source-audit-2026-10-16.md) rozróżniają dostępność strony od potwierdzenia trwającej rekrutacji. Kontrola nie uruchamiała skanera.
+
 Ustawienia Cloudflare Pages:
 
 - komenda budowania: `npm run build`

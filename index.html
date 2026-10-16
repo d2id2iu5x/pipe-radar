@@ -311,10 +311,13 @@ const RECORD_META = Object.freeze({
   'vard-brattvaag': {url:'https://talents.vaia.com/companies/moja-norwegia/monter-rurociagow-pipe-fitter-norwegia-vard-brattvaag-134755460/', origin:'aggregator', housing:'provided', travel:'provided', isNew:true},
   'mojanorwegia-pipefitter': {url:'https://www.mojanorwegia.pl/ogloszenia_o_prace/pipe_fitter_norwegia-s105908.html', origin:'portal', housing:'provided', travel:'provided'},
   'stanship-indeed': {url:'https://pl.indeed.com/viewjob?jk=c15ed66dface1e9c', origin:'aggregator', housing:'provided', travel:'provided', archived:true, reason:'Potwierdzone 16.10.2026: Indeed oznacza ofertę jako wygasłą.'},
-  'fjordpipe-nav': {url:'https://arbeidsplassen.nav.no/stillinger/stilling/c83de50f-8800-4849-ade5-b387c7954951', origin:'nav', housing:'unknown', travel:'unknown'},
+  'fjordpipe-nav': {url:'https://arbeidsplassen.nav.no/stillinger/stilling/c83de50f-8800-4849-ade5-b387c7954951', origin:'nav', housing:'unknown', travel:'unknown', archived:true, reason:"Potwierdzone 16.10.2026: NAV oznacza ogłoszenie Fjordpipe jako nieaktywne."},
   'ulmo-nav': {url:'https://arbeidsplassen.nav.no/stillinger/stilling/77445a66-0cde-40eb-a122-552eacac52bd', origin:'nav', housing:'unknown', travel:'unknown'},
-  'tess-finn': {url:'https://www.finn.no/job/ad/473893035', origin:'portal', housing:'unknown', travel:'unknown'},
-  'rempol-rotation': {url:'https://www.mojanorwegia.pl/ogloszenia_o_prace/monter_rurociagow_okretowych_-_stala_rotacja_2_3-s104275.html', origin:'portal', housing:'provided', travel:'provided', checkDate:true}
+  'tess-finn': {url:'https://www.finn.no/job/ad/473893035', origin:'portal', housing:'unknown', travel:'unknown', archived:true, reason:"Potwierdzone 16.10.2026: FINN oznacza termin zgłoszeń jako zakończony (15.09.2026)."},
+  'rempol-rotation': {url:'https://www.mojanorwegia.pl/ogloszenia_o_prace/monter_rurociagow_okretowych_-_stala_rotacja_2_3-s104275.html', origin:'portal', housing:'provided', travel:'provided', checkDate:true},
+  'jobtech:31487016': {"url":"https://arbetsformedlingen.se/platsbanken/annonser/31487016","archived":true,"reason":"Potwierdzone 16.10.2026: Platsbanken oznacza termin zgłoszeń SAAB jako zakończony (15.10.2026)."},
+  'bilfinger:https://jobs.bilfinger.com/job/Bridgwater-Piping-Superintendent-HPC-SOM-Bridgwater/1427056333/': {"url":"https://jobs.bilfinger.com/job/Bridgwater-Piping-Superintendent-HPC-SOM-Bridgwater/1427056333/","archived":true,"reason":"Potwierdzone 16.10.2026: Bilfinger informuje, że stanowisko zostało obsadzone."},
+  'bilfinger:https://jobs.bilfinger.com/job/Wareham-Pipefitter-Perenco-Wytch-Farm-DOR-Wareham/1437593533/': {"url":"https://jobs.bilfinger.com/job/Wareham-Pipefitter-Perenco-Wytch-Farm-DOR-Wareham/1437593533/","archived":true,"reason":"Potwierdzone 16.10.2026: Bilfinger informuje, że stanowisko zostało obsadzone."}
 });
 // Frozen v2.3 mapping: never derive legacy IDs from the current JOBS order.
 const LEGACY_IDS = Object.freeze({
