@@ -74,7 +74,7 @@ export function applyLifecycle(input: LifecycleInput): LifecycleResult {
     const sourceWasSuccessful = prior.sources.some(source => successful.has(source.sourceId));
     const missingSuccessfulScans = prior.missingSuccessfulScans + (sourceWasSuccessful ? 1 : 0);
     const stale = Date.parse(input.now) - Date.parse(prior.lastVerifiedAt) > 14 * 24 * 60 * 60 * 1000;
-    const status = missingSuccessfulScans >= 3 ? "archived" : missingSuccessfulScans >= 2 || stale ? "uncertain" : prior.status === "new" ? "active" : prior.status;
+    const status: Job["status"] = prior.status === "archived" || missingSuccessfulScans >= 3 ? "archived" : missingSuccessfulScans >= 2 || stale ? "uncertain" : prior.status === "new" ? "active" : prior.status;
     const retained = { ...(isInactive(prior) ? withoutInactiveSources(prior) : prior), missingSuccessfulScans, status };
     nextJobs[prior.id] = retained;
     if (missingSuccessfulScans >= 3) {

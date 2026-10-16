@@ -1719,7 +1719,7 @@
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
         "missingSuccessfulScans": 0,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 86,
@@ -1925,7 +1925,7 @@
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
         "missingSuccessfulScans": 0,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 97,
@@ -2133,7 +2133,7 @@
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
         "missingSuccessfulScans": 0,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 98,
@@ -6833,7 +6833,7 @@
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
         "missingSuccessfulScans": 0,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 86,
@@ -7039,7 +7039,7 @@
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
         "missingSuccessfulScans": 0,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 97,
@@ -7247,7 +7247,7 @@
         "lastSeenAt": "2026-09-15T00:00:00.000Z",
         "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
         "missingSuccessfulScans": 0,
-        "status": "uncertain",
+        "status": "archived",
         "conflicts": [],
         "fit": {
           "base": 98,
@@ -7567,6 +7567,33 @@
         "lastSeenAt": "2026-10-14T18:49:23.217Z",
         "archivedAt": "2026-10-16T11:21:05.205Z",
         "reason": "three-successful-absences"
+      },
+      "stanship-indeed": {
+        "id": "stanship-indeed",
+        "sourceId": "seed-stanship-indeed",
+        "sourceJobId": "stanship-indeed",
+        "status": "archived",
+        "lastSeenAt": "2026-09-15T00:00:00.000Z",
+        "archivedAt": "2026-10-16T14:43:47.195Z",
+        "reason": "explicit-inactive"
+      },
+      "adecco-kristiansund": {
+        "id": "adecco-kristiansund",
+        "sourceId": "seed-adecco-kristiansund",
+        "sourceJobId": "adecco-kristiansund",
+        "status": "archived",
+        "lastSeenAt": "2026-09-15T00:00:00.000Z",
+        "archivedAt": "2026-10-16T14:43:47.195Z",
+        "reason": "explicit-inactive"
+      },
+      "jobs-norint": {
+        "id": "jobs-norint",
+        "sourceId": "seed-jobs-norint",
+        "sourceJobId": "jobs-norint",
+        "status": "archived",
+        "lastSeenAt": "2026-09-15T00:00:00.000Z",
+        "archivedAt": "2026-10-16T14:43:47.195Z",
+        "reason": "explicit-inactive"
       }
     },
     "cursors": {}

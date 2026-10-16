@@ -1718,7 +1718,7 @@
       "lastSeenAt": "2026-09-15T00:00:00.000Z",
       "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
       "missingSuccessfulScans": 0,
-      "status": "uncertain",
+      "status": "archived",
       "conflicts": [],
       "fit": {
         "base": 86,
@@ -1924,7 +1924,7 @@
       "lastSeenAt": "2026-09-15T00:00:00.000Z",
       "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
       "missingSuccessfulScans": 0,
-      "status": "uncertain",
+      "status": "archived",
       "conflicts": [],
       "fit": {
         "base": 97,
@@ -2132,7 +2132,7 @@
       "lastSeenAt": "2026-09-15T00:00:00.000Z",
       "lastVerifiedAt": "2026-09-15T00:00:00.000Z",
       "missingSuccessfulScans": 0,
-      "status": "uncertain",
+      "status": "archived",
       "conflicts": [],
       "fit": {
         "base": 98,

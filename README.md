@@ -29,6 +29,8 @@ Informacja o częściowo niedostępnych źródłach, kopii awaryjnej lub trybie 
 
 Ostrzeżenie dotyczy wieku całej bazy. Nie usuwa ofert i nie zmienia klasyfikacji pojedynczych ogłoszeń, ulubionych ani reguł archiwizacji. Niedawny skan nie potwierdza, że konkretna rekrutacja nadal trwa.
 
+Korekta zgłoszenia z 16.10.2026: ofertę Indeed `c15ed66dface1e9c` oznaczono jako archiwalną po potwierdzeniu komunikatu o wygaśnięciu. Przywrócono też dwie wcześniejsze decyzje archiwizacji zapisane w bazie początkowej. Upływ czasu ani awaria źródła nie przywracają już zarchiwizowanej oferty do zwykłych wyników; może to zrobić ponowna obserwacja oferty przez źródło. Wpis pozostaje w archiwum, a zapisane notatki użytkownika są zachowane. Indeed ma tryb `probe-only` i nie jest źródłem regularnego importu; ta korekta nie dodaje skanowania Indeed.
+
 Ustawienia Cloudflare Pages:
 
 - komenda budowania: `npm run build`

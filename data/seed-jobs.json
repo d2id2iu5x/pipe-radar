@@ -276,7 +276,9 @@
       "url": "https://pl.indeed.com/viewjob?jk=c15ed66dface1e9c",
       "origin": "aggregator",
       "housing": "provided",
-      "travel": "provided"
+      "travel": "provided",
+      "archived": true,
+      "reason": "Potwierdzone 16.10.2026: Indeed oznacza ofertę jako wygasłą."
     }
   },
   {

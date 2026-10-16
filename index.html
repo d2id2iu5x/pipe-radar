@@ -310,7 +310,7 @@ const RECORD_META = Object.freeze({
   'jobs-norint': {url:'https://www.jobs.pl/monter-rurociagow-przemyslowych-pipefitter-norwegia-oferta-3925314', origin:'portal', housing:'provided', travel:'partial', archived:true, reason:'W poprzednim audycie: źródło oznaczyło ofertę jako wygasłą.'},
   'vard-brattvaag': {url:'https://talents.vaia.com/companies/moja-norwegia/monter-rurociagow-pipe-fitter-norwegia-vard-brattvaag-134755460/', origin:'aggregator', housing:'provided', travel:'provided', isNew:true},
   'mojanorwegia-pipefitter': {url:'https://www.mojanorwegia.pl/ogloszenia_o_prace/pipe_fitter_norwegia-s105908.html', origin:'portal', housing:'provided', travel:'provided'},
-  'stanship-indeed': {url:'https://pl.indeed.com/viewjob?jk=c15ed66dface1e9c', origin:'aggregator', housing:'provided', travel:'provided'},
+  'stanship-indeed': {url:'https://pl.indeed.com/viewjob?jk=c15ed66dface1e9c', origin:'aggregator', housing:'provided', travel:'provided', archived:true, reason:'Potwierdzone 16.10.2026: Indeed oznacza ofertę jako wygasłą.'},
   'fjordpipe-nav': {url:'https://arbeidsplassen.nav.no/stillinger/stilling/c83de50f-8800-4849-ade5-b387c7954951', origin:'nav', housing:'unknown', travel:'unknown'},
   'ulmo-nav': {url:'https://arbeidsplassen.nav.no/stillinger/stilling/77445a66-0cde-40eb-a122-552eacac52bd', origin:'nav', housing:'unknown', travel:'unknown'},
   'tess-finn': {url:'https://www.finn.no/job/ad/473893035', origin:'portal', housing:'unknown', travel:'unknown'},
@@ -743,10 +743,12 @@ function remoteBenefit(value){const text=normalize(value);if(/darmow|opłacon|op
 function remoteOrigin(kind){return kind==='employer'?'employer':kind==='official-api'?'nav':kind==='aggregator'?'aggregator':'portal';}
 function remoteDate(value){const date=new Date(value);return Number.isFinite(date.getTime())?date.toLocaleDateString('pl-PL',{day:'2-digit',month:'2-digit',year:'numeric'}):'Nie podano';}
 function toLegacyRemoteJob(job){
+  const archived=job.status==='archived',known=RECORD_META[job.id];
+  const reason=archived?((known?.url===job.url?known.reason:'')||'Oferta w archiwum. Sprawdź aktualność rekrutacji w źródle.'):'';
   return {id:job.id,title:job.title,company:job.company,location:job.location,country:job.country,type:job.employmentType,
     rotation:job.rotation?.raw||'Nie podano',rate:job.rate?.raw||'Nie podano',housing:job.housing?.raw||'Nie podano',travel:job.travel?.raw||'Nie podano',
     skills:Array.isArray(job.skills)?job.skills.join(', '):String(job.skills||''),fit:Number(job.fit?.score??job.fit?.base??0),source:job.sourceId||'Źródło zdalne',url:job.url,
-    verified:remoteDate(job.lastVerifiedAt),tags:Array.isArray(job.tags)?job.tags:[],meta:{checkDate:job.status==='uncertain'||Boolean(job.conflicts?.length),origin:remoteOrigin(job.sourceKind),housing:remoteBenefit(job.housing?.raw),travel:remoteBenefit(job.travel?.raw),archived:job.status==='archived',isNew:job.status==='new'}};
+    verified:remoteDate(job.lastVerifiedAt),tags:Array.isArray(job.tags)?job.tags:[],meta:{checkDate:job.status==='uncertain'||Boolean(job.conflicts?.length),origin:remoteOrigin(job.sourceKind),housing:remoteBenefit(job.housing?.raw),travel:remoteBenefit(job.travel?.raw),archived,reason,isNew:job.status==='new'}};
 }
 let lastRemoteData=null;
 window.PIPE_RADAR_APP={

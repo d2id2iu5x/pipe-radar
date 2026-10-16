@@ -13,6 +13,24 @@ const job = { ...normalizeJob({
 const initial: LifecycleState = { jobs: { [job.id]: job }, audit: {} };
 
 describe("job lifecycle", () => {
+  it.each([{ successfulSourceIds: [] }, { successfulSourceIds: ["nav"] }])("does not reopen a previously archived offer without a new observation ($successfulSourceIds)", ({ successfulSourceIds }) => {
+    const archived = { ...job, status: "archived" as const, missingSuccessfulScans: 0 };
+    const previous: LifecycleState = { jobs: { [job.id]: archived }, audit: {} };
+    const result = applyLifecycle({ current: [], previous, successfulSourceIds, inactiveIds: [], now: "2026-10-16T12:00:00.000Z" });
+    expect(result.jobs[0]?.status).toBe("archived");
+    expect(result.jobs[0]?.lastVerifiedAt).toBe(archived.lastVerifiedAt);
+    expect(result.jobs[0]?.lastSeenAt).toBe(archived.lastSeenAt);
+    expect(previous.jobs[job.id]).toEqual(archived);
+  });
+
+  it("allows a genuinely observed archived offer to become active again", () => {
+    const previous: LifecycleState = { jobs: { [job.id]: { ...job, status: "archived", missingSuccessfulScans: 3 } }, audit: {} };
+    const result = applyLifecycle({ current: [job], previous, successfulSourceIds: ["nav"], inactiveIds: [], now: "2026-10-16T12:00:00.000Z" });
+    expect(result.jobs[0]?.status).toBe("active");
+    expect(result.jobs[0]?.lastVerifiedAt).toBe("2026-10-16T12:00:00.000Z");
+    expect(result.jobs[0]?.missingSuccessfulScans).toBe(0);
+  });
+
   it("archives only after three successful absences", () => {
     const missing = (previous: LifecycleState) => applyLifecycle({ current: [], previous, successfulSourceIds: ["nav"], inactiveIds: [], now });
     const state1 = missing(initial);
