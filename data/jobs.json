@@ -56,8 +56,11 @@
       "lastSeenAt": "2026-10-28T22:32:59.004Z",
       "lastVerifiedAt": "2026-10-28T22:32:59.004Z",
       "missingSuccessfulScans": 0,
-      "status": "active",
-      "conflicts": [],
+      "status": "uncertain",
+      "conflicts": [
+        "country",
+        "sourceJobId"
+      ],
       "fit": {
         "base": 0,
         "adjustments": [],

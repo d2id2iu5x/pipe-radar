@@ -1,6 +1,7 @@
 import { load } from "cheerio";
 import type { RawJob, SourceKind, SourceResult } from "../domain/types.js";
 import { isRelevantJob } from "../domain/relevance.js";
+import { foldEuropean, normalizeCountry } from "../domain/europe.js";
 import { fetchSource } from "./http.js";
 import { extractJobPostings } from "./jsonld.js";
 import { SOURCE_CONFIG } from "./source-config.js";
@@ -11,6 +12,24 @@ const KINDS: Record<ConfiguredId, SourceKind> = {
   adecco: "employer", simona: "employer", soprana: "employer",
   mojaNorwegia: "portal", vaia: "aggregator"
 };
+
+function preserveVaiaIdentity(job: RawJob): RawJob {
+  const url = new URL(job.url);
+  // Stable URL vacancy IDs are distinct even if JSON-LD repeats a publisher identifier.
+  const sourceJobId = url.hostname === "talents.vaia.com"
+    ? url.pathname.match(/^\/companies\/.+-([0-9]+)\/?$/)?.[1]
+    : undefined;
+  const country = normalizeCountry(job.country);
+  const countryKnown = !["", "nie podano", "unknown", "not specified"].includes(foldEuropean(country));
+  // This is a review flag, never a replacement inferred from title or recruiter name.
+  const bodyClaimsNorway = /\b(?:praca|pracy)\s+w\s+norwegii\b|\bwork(?:ing)?\s+in\s+norway\b/i.test(job.description ?? "");
+  return {
+    ...job,
+    sourceJobId: sourceJobId ?? `${url.origin}${url.pathname}`,
+    reportedSourceJobId: job.sourceJobId,
+    conflicts: [...new Set([...(job.conflicts ?? []), ...(countryKnown && country !== "Norwegia" && bodyClaimsNorway ? ["country"] : [])])]
+  };
+}
 
 function adapter(id: ConfiguredId, roots: readonly string[]): SourceAdapter {
   const kind = KINDS[id];
@@ -48,7 +67,7 @@ function adapter(id: ConfiguredId, roots: readonly string[]): SourceAdapter {
           succeeded += 1;
           jobs.push(...extractJobPostings(detail.body, url)
             .filter(job => isRelevantJob({ title: job.title, description: job.description }))
-            .map(job => ({ ...job, sourceId: id, sourceKind: kind })));
+            .map(job => ({ ...(id === "vaia" ? preserveVaiaIdentity(job) : job), sourceId: id, sourceKind: kind })));
           parsedEvidence ||= extractJobPostings(detail.body, url).length > 0;
         }
       }

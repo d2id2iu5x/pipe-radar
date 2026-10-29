@@ -59,13 +59,20 @@ export function applyLifecycle(input: LifecycleInput): LifecycleResult {
     const prior = previous.jobs[incoming.id];
     const firstSeenAt = prior?.firstSeenAt ?? incoming.firstSeenAt;
     const age = Date.parse(input.now) - Date.parse(firstSeenAt);
+    // A fresh scrape does not resolve a recorded identity/geography disagreement.
+    // These flags require an explicit source review before they are cleared.
+    const conflicts = [...new Set([
+      ...incoming.conflicts,
+      ...(prior?.conflicts.filter(field => ["country", "location", "sourceJobId"].includes(field)) ?? [])
+    ])];
     nextJobs[incoming.id] = {
       ...incoming,
+      conflicts,
       firstSeenAt,
       lastSeenAt: input.now,
       lastVerifiedAt: input.now,
       missingSuccessfulScans: 0,
-      status: age <= 72 * 60 * 60 * 1000 ? "new" : "active"
+      status: conflicts.length ? "uncertain" : age <= 72 * 60 * 60 * 1000 ? "new" : "active"
     };
   }
 
@@ -74,7 +81,7 @@ export function applyLifecycle(input: LifecycleInput): LifecycleResult {
     const sourceWasSuccessful = prior.sources.some(source => successful.has(source.sourceId));
     const missingSuccessfulScans = prior.missingSuccessfulScans + (sourceWasSuccessful ? 1 : 0);
     const stale = Date.parse(input.now) - Date.parse(prior.lastVerifiedAt) > 14 * 24 * 60 * 60 * 1000;
-    const status: Job["status"] = prior.status === "archived" || missingSuccessfulScans >= 3 ? "archived" : missingSuccessfulScans >= 2 || stale ? "uncertain" : prior.status === "new" ? "active" : prior.status;
+    const status: Job["status"] = prior.status === "archived" || missingSuccessfulScans >= 3 ? "archived" : prior.conflicts.length || missingSuccessfulScans >= 2 || stale ? "uncertain" : prior.status === "new" ? "active" : prior.status;
     const retained = { ...(isInactive(prior) ? withoutInactiveSources(prior) : prior), missingSuccessfulScans, status };
     nextJobs[prior.id] = retained;
     if (missingSuccessfulScans >= 3) {

@@ -1,6 +1,10 @@
 # PIPE RADAR v2.4
 
-PIPE RADAR publikuje ostatni zwalidowany snapshot ofert jako statyczny plik `data/jobs.json`. GitHub Actions uruchamia skan co sześć godzin, a frontend na Cloudflare Pages pobiera aktualny snapshot bezpośrednio z publicznego repozytorium. Statyczna strona zachowuje 13 rekordów v2.3.1 jako awaryjną bazę lokalną.
+PIPE RADAR publikuje ostatni zwalidowany snapshot ofert jako statyczny plik `data/jobs.json`. GitHub Actions uruchamia skan co sześć godzin, a frontend Cloudflare pobiera aktualny snapshot bezpośrednio z publicznego repozytorium. Statyczna strona zachowuje 13 rekordów v2.3.1 jako awaryjną bazę lokalną.
+
+## Poprawka audytu A-16 — integracja 29.10.2026
+
+Kod rozróżnia identyfikatory ofert Vaia, zachowuje dowody źródłowe i nie przywraca aktywnego statusu wpisom z nierozstrzygniętym konfliktem tożsamości lub lokalizacji. [Integracja i odbiór](docs/operations/audit-release-a16-2026-10-29.md) opisują zastosowanie [poprawki z 28.10](docs/operations/audit-repair-a16-2026-10-28.md) do nowszego snapshotu. Pliki danych zachowują daty ostatniego rzeczywistego skanu; sama publikacja korekty nie odświeża ogłoszeń.
 
 ## Uruchomienie lokalne
 

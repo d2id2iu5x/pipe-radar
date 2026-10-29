@@ -40,7 +40,9 @@ export function normalizeJob(raw: RawJob, seenAt: string): Job {
     sourceJobId: raw.sourceJobId,
     sourceKind: raw.sourceKind,
     url: raw.url,
-    sources: [{ sourceId: raw.sourceId, sourceJobId: raw.sourceJobId, kind: raw.sourceKind, url: raw.url }],
+    sources: [{ sourceId: raw.sourceId, sourceJobId: raw.sourceJobId, kind: raw.sourceKind, url: raw.url,
+      reportedSourceJobId: raw.reportedSourceJobId ?? raw.sourceJobId, reportedCountry: raw.country,
+      ...(raw.location !== undefined ? { reportedLocation: raw.location } : {}) }],
     title: raw.title.trim(),
     company: raw.company.trim(),
     country: normalizeCountry(raw.country),
@@ -58,8 +60,8 @@ export function normalizeJob(raw: RawJob, seenAt: string): Job {
     lastSeenAt: seenAt,
     lastVerifiedAt: seenAt,
     missingSuccessfulScans: 0,
-    status: "new",
-    conflicts: [],
+    status: raw.conflicts?.length ? "uncertain" : "new",
+    conflicts: [...new Set(raw.conflicts ?? [])],
     fit: { base: raw.legacyFit ?? 0, adjustments: [], raw: raw.legacyFit ?? 0, score: 0 },
     legacyFit: raw.legacyFit ?? 0
   };

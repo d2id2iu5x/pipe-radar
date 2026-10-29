@@ -16,6 +16,14 @@ function text(value: unknown): string {
   }
   return "";
 }
+function identifierValue(value: unknown): string {
+  if (typeof value === "string") return value.trim();
+  if (!value || typeof value !== "object" || Array.isArray(value)) return "";
+  // PropertyValue.name names the identifier's namespace/publisher, not the vacancy.
+  const explicit = (value as JsonLdObject).value;
+  if (typeof explicit === "string") return explicit.trim();
+  return typeof explicit === "number" && Number.isFinite(explicit) ? String(explicit) : "";
+}
 function salary(value: unknown): string | undefined {
   if (!value || typeof value !== "object") return undefined;
   const money = value as JsonLdObject;
@@ -52,10 +60,9 @@ export function extractJobPostings(html: string, pageUrl: string): RawJob[] {
       const url = safeUrl(text(posting.url) || pageUrl,pageUrl);
       if (!url) continue;
       const organization = posting.hiringOrganization && typeof posting.hiringOrganization === "object" ? posting.hiringOrganization as JsonLdObject : {};
-      const identifier = posting.identifier && typeof posting.identifier === "object" ? posting.identifier as JsonLdObject : posting.identifier;
       const jobAddress = address(posting);
       output.push({
-        sourceId, sourceJobId: text(identifier) || url, sourceKind: "portal", url,
+        sourceId, sourceJobId: identifierValue(posting.identifier) || url, sourceKind: "portal", url,
         title: text(posting.title), company: text(organization.name) || "Nie podano",
         country: text(jobAddress.addressCountry) || "Nie podano",
         location: text(jobAddress.addressLocality) || text(jobAddress.addressRegion) || undefined,

@@ -7,6 +7,8 @@ export interface RawJob {
   sourceId: string;
   sourceJobId: string;
   sourceKind: SourceKind;
+  reportedSourceJobId?: string;
+  conflicts?: string[];
   url: string;
   title: string;
   company: string;
@@ -29,6 +31,9 @@ export interface SourceReference {
   sourceJobId: string;
   kind: SourceKind;
   url: string;
+  reportedSourceJobId?: string;
+  reportedCountry?: string;
+  reportedLocation?: string;
 }
 
 export interface NormalizedRate {
