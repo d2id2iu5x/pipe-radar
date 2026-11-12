@@ -3,6 +3,9 @@ import { dirname, join } from "node:path";
 export interface StaticFile { source: string; target: string; }
 export function pipeRadarStaticFiles(root: string): StaticFile[] {
   return [
+    { source: join(root, "assets/pipe-family.css"), target: "assets/pipe-family.css" },
+    { source: join(root, "assets/family/icon-64.png"), target: "assets/family/icon-64.png" },
+    { source: join(root, "assets/family/home-hero-pipeline.webp"), target: "assets/family/home-hero-pipeline.webp" },
     { source: join(root, "index.html"), target: "index.html" },
     { source: join(root, "src/domain/europe.js"), target: "src/domain/europe.js" },
     { source: join(root, "src/client/europe-view.js"), target: "src/client/europe-view.js" },

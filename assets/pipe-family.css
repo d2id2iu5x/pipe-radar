@@ -1,0 +1,29 @@
+
+/* Pipe family: Academy / Slang / Radar, 12 November 2026. */
+:root{--pipe-family-height:68px}
+body{padding-top:var(--pipe-family-height)}
+.pipe-family{position:fixed;inset:0 0 auto;z-index:95;height:var(--pipe-family-height);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px clamp(12px,3vw,36px);background:#071214f5;border-bottom:1px solid #47685d;box-shadow:0 8px 30px #0004;backdrop-filter:blur(14px);font-family:"Segoe UI",Arial,sans-serif;color:#f0f6f3}
+.pipe-family-mark{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.12em;font-weight:700;white-space:nowrap}
+.pipe-family-mark img{width:38px;height:38px;border-radius:6px}
+.pipe-family-links{display:flex;gap:8px;min-width:0}
+.pipe-family .pipe-family-link{display:flex;align-items:center;justify-content:center;min-height:44px;padding:9px 18px;border:1px solid #648575;border-radius:14px;background:linear-gradient(165deg,#345048,#243d36 48%,#182d28);box-shadow:inset 0 1px #e1ffe545,0 3px 5px #0004;color:#f0f6f3;font-size:14px;font-weight:650;line-height:1.2;text-decoration:none;white-space:nowrap}
+.pipe-family .pipe-family-link[aria-current=page]{background:linear-gradient(165deg,#a0e5b5,#70ce91 46%,#4daf70);color:#071113;border-color:#9be2b2}
+.pipe-family .pipe-family-link:hover{border-color:#a0e8b7}
+.pipe-family .pipe-family-link:focus-visible{outline:3px solid #a0e8b7;outline-offset:3px}
+.pipe-family-footer{display:flex;justify-content:center;flex-wrap:wrap;gap:18px;padding:28px 16px;color:#b6c7bf;font:14px "Segoe UI",Arial,sans-serif}
+.pipe-family-footer a{color:inherit;text-underline-offset:4px}
+@media(max-width:700px){.pipe-family{justify-content:center;padding:8px 10px}.pipe-family-mark{display:none}.pipe-family-links{width:100%;gap:6px}.pipe-family .pipe-family-link{flex:1;padding:10px 6px;font-size:12px}.pipe-family-links{justify-content:center}}
+@media print{.pipe-family,.pipe-family-footer{display:none!important}body{padding-top:0!important}}
+
+:root{--bg:#071113;--panel:#152927;--panel2:#132829;--line:#47685d;--text:#f0f6f3;--muted:#b6c7bf;--accent:#7cdb9b;--accent2:#a0e8b7;color-scheme:dark}
+body{background:radial-gradient(ellipse at 12% 0,#365c4438,transparent 45rem),#071113;font-family:"Segoe UI",Arial,sans-serif}
+.top{padding:32px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(90deg,#071113f2,#07111399),url("./family/home-hero-pipeline.webp") center/cover;min-height:300px}
+.top h1{letter-spacing:-.04em}
+.hero,.card,.panel,.stat{background:linear-gradient(145deg,#233936,#132829 48%,#0c1c20);border-color:#47685d;border-radius:20px;box-shadow:inset 0 1px #d5f8e52b,0 20px 42px -16px #000b}
+button,.secondary,.language-button{border:1px solid #648575;background:linear-gradient(165deg,#345048,#243d36 48%,#182d28);color:#f0f6f3;box-shadow:inset 0 1px #e1ffe545,0 3px 5px #0004}
+.primary{background:linear-gradient(165deg,#a0e5b5,#70ce91 46%,#4daf70);color:#071113}
+input,select,textarea,.detail,.saved-item,.compare-item{background:#0a191b;border-color:#47685d}
+.tag{background:#203a34;border-color:#47685d;color:#c9dfd3}
+.detail label,.field small,.source,.note,footer,.compare-item dt{color:#b6c7bf}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline-color:#a0e8b7}
+@media(max-width:800px){.top{padding:24px 18px}.top h1{font-size:clamp(32px,8vw,48px)}}
