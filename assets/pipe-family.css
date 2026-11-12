@@ -27,3 +27,6 @@ input,select,textarea,.detail,.saved-item,.compare-item{background:#0a191b;borde
 .detail label,.field small,.source,.note,footer,.compare-item dt{color:#b6c7bf}
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline-color:#a0e8b7}
 @media(max-width:800px){.top{padding:24px 18px}.top h1{font-size:clamp(32px,8vw,48px)}}
+
+/* Leave the fixed family bar clear when following in-page navigation. */
+@media screen { html { scroll-padding-top: calc(var(--pipe-family-height) + 16px); } .pipe-family, .pipe-family * { box-sizing: border-box; } }
